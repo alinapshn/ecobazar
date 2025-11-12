@@ -9,27 +9,31 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 56px;
+    line-height: 120%;
+    font-weight: 600;
 }
 
-h2{
+h2 {
     font-size: 48px;
 }
 
-h3{
+h3 {
     font-size: 40px;
 }
 
-h4{
+h4 {
     font-size: 36px;
 }
 
-h5{
+h5 {
     font-size: 32px;
+    line-height: 120%;
+    font-weight: 600;
 }
 
 a {
@@ -44,4 +48,8 @@ a {
     margin: 0 auto;
 }
 
-
+.cursive {
+    font-family: "Segoe Script";
+    text-transform: uppercase;
+    color: $primary;
+}

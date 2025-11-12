@@ -1,0 +1,65 @@
+.props {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 68px 0;
+    }
+    
+    &__img{
+        position: relative;
+
+    }
+
+    &__sale {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: $warning;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        top: 152px;
+        right: 36px;
+
+        &-title {
+            color: $white;
+        }
+
+        &-subtitle {
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+
+    &__info {
+        max-width: 536px;
+
+        &-subtitle {
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-subtext {
+            font-size: $body-l;
+            color: $green-5;
+            margin-bottom: 32px;
+        }
+        &-button {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: $body-m;
+            color: $white;
+            background-color: $primary;
+            padding: 16px 40px;
+            border-radius: 30px;
+        }
+    }
+}

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Segoe Script";
+  src: url("/fonts/SegoeScript.eot");
+  src: url("/fonts/SegoeScript.eot?#iefix") format("embedded-opentype"), url("/fonts/SegoeScript.woff2") format("woff2"), url("/fonts/SegoeScript.woff") format("woff"), url("/fonts/SegoeScript.ttf") format("truetype"), url("/fonts/SegoeScript.svg#SegoeScript") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -102,6 +110,8 @@ body {
 
 h1 {
   font-size: 56px;
+  line-height: 120%;
+  font-weight: 600;
 }
 
 h2 {
@@ -118,6 +128,8 @@ h4 {
 
 h5 {
   font-size: 32px;
+  line-height: 120%;
+  font-weight: 600;
 }
 
 a {
@@ -130,6 +142,12 @@ a {
   max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.cursive {
+  font-family: "Segoe Script";
+  text-transform: uppercase;
+  color: #00b207;
 }
 
 .header__wrapper {
@@ -169,6 +187,9 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.header__middle-logo h5 {
+  font-weight: normal;
 }
 .header__middle-buttons {
   display: flex;
@@ -269,4 +290,59 @@ a {
 }
 .header__list-item:hover {
   color: #00b207;
+}
+
+.props__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 68px 0;
+}
+.props__img {
+  position: relative;
+}
+.props__sale {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FF8A00;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  top: 152px;
+  right: 36px;
+}
+.props__sale-title {
+  color: #FFFFFF;
+}
+.props__sale-subtitle {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.props__info {
+  max-width: 536px;
+}
+.props__info-subtitle {
+  margin-bottom: 8px;
+}
+.props__info-title {
+  margin-bottom: 20px;
+}
+.props__info-subtext {
+  font-size: 18px;
+  color: #618062;
+  margin-bottom: 32px;
+}
+.props__info-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #00b207;
+  padding: 16px 40px;
+  border-radius: 30px;
 }/*# sourceMappingURL=main.css.map */
