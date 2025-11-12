@@ -218,7 +218,7 @@ a {
 }
 .header__search-button {
   background: #00b207;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 14px 24px;
   border-radius: 0 5px 5px 0;
 }
@@ -233,10 +233,10 @@ a {
 .header__cart-quantity {
   position: absolute;
   border-radius: 100%;
-  background-color: #2C742F;
-  color: #FFFFFF;
+  background-color: #2c742f;
+  color: #ffffff;
   font-size: 12px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   text-align: center;
   padding: 0.5px 6px;
   top: -4px;
@@ -270,7 +270,7 @@ a {
   gap: 8px;
   padding: 16px 24px;
   background: #00b207;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 .header__bottom-phone {
@@ -297,6 +297,7 @@ a {
   align-items: center;
   gap: 18px;
   padding: 68px 0;
+  position: relative;
 }
 .props__img {
   position: relative;
@@ -305,7 +306,7 @@ a {
   position: absolute;
   height: 100px;
   width: 100px;
-  background-color: #FF8A00;
+  background-color: #ff8a00;
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -316,10 +317,10 @@ a {
   right: 36px;
 }
 .props__sale-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .props__sale-subtitle {
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .props__info {
@@ -341,8 +342,58 @@ a {
   align-items: center;
   gap: 16px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #00b207;
   padding: 16px 40px;
-  border-radius: 30px;
+  border-radius: 43px;
+}
+.props__banner {
+  box-shadow: 0 16px 48px 0 rgba(14, 107, 21, 0.08);
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  max-width: 1320px;
+  margin-top: 52px;
+}
+.props__block {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  border-right: 1px solid #e6e6e6;
+  flex: 1;
+}
+.props__block:hover {
+  transition: all 0.3s ease;
+  background-color: #00b207;
+}
+.props__block:hover p {
+  color: #ffffff;
+}
+.props__block-icon {
+  padding: 19px;
+  border-radius: 100%;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+.props__block-icon img {
+  max-width: 32px;
+}
+.props__block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.props__block-title {
+  font-size: 18px;
+  color: #191919;
+  font-weight: 600;
+}
+.props__block-info {
+  font-size: 14px;
+  color: #999999;
 }/*# sourceMappingURL=main.css.map */
