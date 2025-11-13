@@ -108,10 +108,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  font-size: 56px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 120%;
   font-weight: 600;
+}
+
+h1 {
+  font-size: 56px;
 }
 
 h2 {
@@ -128,8 +136,6 @@ h4 {
 
 h5 {
   font-size: 32px;
-  line-height: 120%;
-  font-weight: 600;
 }
 
 a {
@@ -292,12 +298,14 @@ a {
   color: #00b207;
 }
 
+.props {
+  position: relative;
+}
 .props__wrapper {
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 68px 0;
-  position: relative;
+  padding: 68px 0 229px 0;
 }
 .props__img {
   position: relative;
@@ -357,6 +365,7 @@ a {
   width: 100%;
   max-width: 1320px;
   margin-top: 52px;
+  bottom: -113px;
 }
 .props__block {
   padding: 40px;
@@ -396,4 +405,91 @@ a {
 .props__block-info {
   font-size: 14px;
   color: #999999;
+}
+
+.intro-prod {
+  background: #edf2ee;
+}
+.intro-prod__wrapper {
+  padding: 211px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.intro-prod__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.intro-prod__list {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.intro-prod__list-item:not(:last-child) {
+  padding-right: 24px;
+  border-right: 1px solid #b3ccb4;
+}
+.intro-prod__products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro-prod__product {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 5px;
+  border: 1px solid #dae5da;
+  position: relative;
+}
+.intro-prod__product:hover {
+  border: 1px solid #2c742f;
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+.intro-prod__product-sale {
+  position: absolute;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: #ea4b48;
+  color: #ffffff;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+}
+.intro-prod__product-sale span {
+  font-weight: 500;
+}
+.intro-prod__product-info {
+  padding: 16px 24px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-prod__product-name {
+  font-size: 16px;
+  color: #2b572e;
+}
+.intro-prod__product-price {
+  font-size: 18px;
+  color: #002603;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+.intro-prod__product-price span {
+  font-size: 16px;
+  color: #7a997c;
+  text-decoration: line-through;
+}
+.intro-prod__product-cart {
+  background-color: #dae5da;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  padding: 13px;
+  align-items: center;
+}
+.intro-prod__product-cart img {
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=main.css.map */

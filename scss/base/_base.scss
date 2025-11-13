@@ -12,10 +12,18 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-h1 {
-    font-size: 56px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 120%;
     font-weight: 600;
+}
+
+h1 {
+    font-size: 56px;
 }
 
 h2 {
@@ -32,8 +40,6 @@ h4 {
 
 h5 {
     font-size: 32px;
-    line-height: 120%;
-    font-weight: 600;
 }
 
 a {

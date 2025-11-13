@@ -1,10 +1,11 @@
 .props {
+    position: relative;
+
     &__wrapper {
         display: flex;
         align-items: center;
         gap: 18px;
-        padding: 68px 0;
-        position: relative;
+        padding: 68px 0 229px 0;
     }
 
     &__img {
@@ -74,6 +75,7 @@
         width: 100%;
         max-width: 1320px;
         margin-top: 52px;
+        bottom: -113px;
     }
 
     &__block {
