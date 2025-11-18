@@ -1,0 +1,46 @@
+.banners {
+    &__wrapper {
+        padding: 100px 0;
+        display: flex;
+        gap: 24px;
+    }
+
+    &__block {
+        border-radius: 8px;
+        position: relative;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: absolute;
+            top: 40px;
+            left: 24px;
+            max-width: 183px;
+            align-items: start;
+            color: $white;
+        }
+
+        &-pg {
+            font-size: $body-s;
+
+            span {
+                font-size: $body-xl;
+                font-weight: 500;
+            }
+        }
+
+        &-button {
+            padding: 14px 32px;
+            color: $primary;
+            background: $white;
+            font-size: $body-s;
+            font-weight: 600;
+            border-radius: 43px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+    }
+}

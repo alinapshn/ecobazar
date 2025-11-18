@@ -492,4 +492,44 @@ a {
 .intro-prod__product-cart img {
   height: 20px;
   width: 20px;
+}
+
+.banners__wrapper {
+  padding: 100px 0;
+  display: flex;
+  gap: 24px;
+}
+.banners__block {
+  border-radius: 8px;
+  position: relative;
+}
+.banners__block-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 40px;
+  left: 24px;
+  max-width: 183px;
+  align-items: start;
+  color: #ffffff;
+}
+.banners__block-pg {
+  font-size: 14px;
+}
+.banners__block-pg span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.banners__block-button {
+  padding: 14px 32px;
+  color: #00b207;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 43px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
 }/*# sourceMappingURL=main.css.map */
