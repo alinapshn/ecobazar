@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "1",
-      "image": "/img/products/apple.jpg",
+      "image": "../img/products/fresh-red-apples.jpg",
       "name": "Fresh Red Apples",
       "category": "fruits",
       "priceCents": 299,
@@ -13,7 +13,7 @@
     },
     {
       "id": "2",
-      "image": "/img/products/banana.jpg",
+      "image": "../img/products/yellow-bananas.jpg",
       "name": "Yellow Bananas",
       "category": "fruits",
       "priceCents": 199,
@@ -24,7 +24,7 @@
     },
     {
       "id": "3",
-      "image": "/img/products/orange.jpg",
+      "image": "../img/products/juicy-oranges.jpg",
       "name": "Juicy Oranges",
       "category": "fruits",
       "priceCents": 349,
@@ -35,7 +35,7 @@
     },
     {
       "id": "4",
-      "image": "/img/products/strawberry.jpg",
+      "image": "../img/products/fresh-strawberries.jpg",
       "name": "Fresh Strawberries",
       "category": "fruits",
       "priceCents": 499,
@@ -46,7 +46,7 @@
     },
     {
       "id": "5",
-      "image": "/img/products/blueberry.jpg",
+      "image": "../img/products/blueberries.jpg",
       "name": "Blueberries",
       "category": "fruits",
       "priceCents": 599,
@@ -57,7 +57,7 @@
     },
     {
       "id": "6",
-      "image": "/img/products/mango.jpg",
+      "image": "../img/products/sweet-mangoes.jpg",
       "name": "Sweet Mangoes",
       "category": "fruits",
       "priceCents": 449,
@@ -68,7 +68,7 @@
     },
     {
       "id": "7",
-      "image": "/img/products/grape.jpg",
+      "image": "../img/products/green-grapes.jpg",
       "name": "Green Grapes",
       "category": "fruits",
       "priceCents": 399,
@@ -79,7 +79,7 @@
     },
     {
       "id": "8",
-      "image": "/img/products/lemon.jpg",
+      "image": "../img/products/lemons.jpg",
       "name": "Lemons",
       "category": "fruits",
       "priceCents": 249,
@@ -90,7 +90,7 @@
     },
     {
       "id": "9",
-      "image": "/img/products/watermelon.jpg",
+      "image": "../img/products/watermelon.jpg",
       "name": "Watermelon",
       "category": "fruits",
       "priceCents": 699,
@@ -101,7 +101,7 @@
     },
     {
       "id": "10",
-      "image": "/img/products/pineapple.jpg",
+      "image": "../img/products/fresh-pineapple.jpg",
       "name": "Fresh Pineapple",
       "category": "fruits",
       "priceCents": 449,
@@ -112,7 +112,7 @@
     },
     {
       "id": "11",
-      "image": "/img/products/carrot.jpg",
+      "image": "../img/products/fresh-carrots.jpg",
       "name": "Fresh Carrots",
       "category": "vegetables",
       "priceCents": 179,
@@ -123,7 +123,7 @@
     },
     {
       "id": "12",
-      "image": "/img/products/broccoli.jpg",
+      "image": "../img/products/green-broccoli.jpg",
       "name": "Green Broccoli",
       "category": "vegetables",
       "priceCents": 249,
@@ -134,7 +134,7 @@
     },
     {
       "id": "13",
-      "image": "/img/products/spinach.jpg",
+      "image": "../img/products/fresh-spinach.jpg",
       "name": "Fresh Spinach",
       "category": "vegetables",
       "priceCents": 199,
@@ -145,7 +145,7 @@
     },
     {
       "id": "14",
-      "image": "/img/products/tomato.jpg",
+      "image": "../img/products/ripe-tomatoes.jpg",
       "name": "Ripe Tomatoes",
       "category": "vegetables",
       "priceCents": 229,
@@ -156,7 +156,7 @@
     },
     {
       "id": "15",
-      "image": "/img/products/potato.jpg",
+      "image": "../img/products/potatoes.jpg",
       "name": "Potatoes",
       "category": "vegetables",
       "priceCents": 149,
@@ -167,7 +167,7 @@
     },
     {
       "id": "16",
-      "image": "/img/products/onion.jpg",
+      "image": "../img/products/yellow-onions.jpg",
       "name": "Yellow Onions",
       "category": "vegetables",
       "priceCents": 129,
@@ -178,7 +178,7 @@
     },
     {
       "id": "17",
-      "image": "/img/products/garlic.jpg",
+      "image": "../img/products/fresh-garlic.jpg",
       "name": "Fresh Garlic",
       "category": "vegetables",
       "priceCents": 199,
@@ -189,7 +189,7 @@
     },
     {
       "id": "18",
-      "image": "/img/products/lettuce.jpg",
+      "image": "../img/products/lettuce.jpg",
       "name": "Lettuce",
       "category": "vegetables",
       "priceCents": 169,
@@ -200,7 +200,7 @@
     },
     {
       "id": "19",
-      "image": "/img/products/cucumber.jpg",
+      "image": "../img/products/fresh-cucumbers.jpg",
       "name": "Fresh Cucumbers",
       "category": "vegetables",
       "priceCents": 189,
@@ -211,7 +211,7 @@
     },
     {
       "id": "20",
-      "image": "/img/products/pepper.jpg",
+      "image": "../img/products/bell-peppers-mix.jpg",
       "name": "Bell Peppers Mix",
       "category": "vegetables",
       "priceCents": 279,
@@ -222,7 +222,7 @@
     },
     {
       "id": "21",
-      "image": "/img/products/chicken.jpg",
+      "image": "../img/products/fresh-chicken-breast.jpg",
       "name": "Fresh Chicken Breast",
       "category": "meat",
       "priceCents": 899,
@@ -233,7 +233,7 @@
     },
     {
       "id": "22",
-      "image": "/img/products/beef.jpg",
+      "image": "../img/products/ground-beef.jpg",
       "name": "Ground Beef",
       "category": "meat",
       "priceCents": 1299,
@@ -244,7 +244,7 @@
     },
     {
       "id": "23",
-      "image": "/img/products/pork.jpg",
+      "image": "../img/products/pork-chops.jpg",
       "name": "Pork Chops",
       "category": "meat",
       "priceCents": 799,
@@ -255,7 +255,7 @@
     },
     {
       "id": "24",
-      "image": "/img/products/turkey.jpg",
+      "image": "../img/products/turkey-breast.jpg",
       "name": "Turkey Breast",
       "category": "meat",
       "priceCents": 1099,
@@ -266,7 +266,7 @@
     },
     {
       "id": "25",
-      "image": "/img/products/lamb.jpg",
+      "image": "../img/products/lamb-chops.jpg",
       "name": "Lamb Chops",
       "category": "meat",
       "priceCents": 1599,
@@ -277,7 +277,7 @@
     },
     {
       "id": "26",
-      "image": "/img/products/bacon.jpg",
+      "image": "../img/products/bacon-strips.jpg",
       "name": "Bacon Strips",
       "category": "meat",
       "priceCents": 649,
@@ -288,7 +288,7 @@
     },
     {
       "id": "27",
-      "image": "/img/products/sausage.jpg",
+      "image": "../img/products/italian-sausage.jpg",
       "name": "Italian Sausage",
       "category": "meat",
       "priceCents": 749,
@@ -299,7 +299,7 @@
     },
     {
       "id": "28",
-      "image": "/img/products/ham.jpg",
+      "image": "../img/products/sliced-ham.jpg",
       "name": "Sliced Ham",
       "category": "meat",
       "priceCents": 899,
@@ -310,7 +310,7 @@
     },
     {
       "id": "29",
-      "image": "/img/products/salmon.jpg",
+      "image": "../img/products/fresh-salmon.jpg",
       "name": "Fresh Salmon",
       "category": "fish",
       "priceCents": 1899,
@@ -321,7 +321,7 @@
     },
     {
       "id": "30",
-      "image": "/img/products/tuna.jpg",
+      "image": "../img/products/fresh-tuna.jpg",
       "name": "Fresh Tuna",
       "category": "fish",
       "priceCents": 2099,
@@ -332,7 +332,7 @@
     },
     {
       "id": "31",
-      "image": "/img/products/cod.jpg",
+      "image": "../img/products/cod-fillets.jpg",
       "name": "Cod Fillets",
       "category": "fish",
       "priceCents": 1299,
@@ -343,7 +343,7 @@
     },
     {
       "id": "32",
-      "image": "/img/products/shrimp.jpg",
+      "image": "../img/products/shrimp.jpg",
       "name": "Shrimp",
       "category": "fish",
       "priceCents": 1699,
@@ -354,7 +354,7 @@
     },
     {
       "id": "33",
-      "image": "/img/products/tilapia.jpg",
+      "image": "../img/products/tilapia-fillets.jpg",
       "name": "Tilapia Fillets",
       "category": "fish",
       "priceCents": 999,
@@ -365,7 +365,7 @@
     },
     {
       "id": "34",
-      "image": "/img/products/crab.jpg",
+      "image": "../img/products/fresh-crab.jpg",
       "name": "Fresh Crab",
       "category": "fish",
       "priceCents": 2399,
@@ -376,7 +376,7 @@
     },
     {
       "id": "35",
-      "image": "/img/products/milk.jpg",
+      "image": "../img/products/whole-milk.jpg",
       "name": "Whole Milk",
       "category": "dairy",
       "priceCents": 349,
@@ -387,7 +387,7 @@
     },
     {
       "id": "36",
-      "image": "/img/products/yogurt.jpg",
+      "image": "../img/products/greek-yogurt.jpg",
       "name": "Greek Yogurt",
       "category": "dairy",
       "priceCents": 449,
@@ -398,7 +398,7 @@
     },
     {
       "id": "37",
-      "image": "/img/products/cheese.jpg",
+      "image": "../img/products/cheddar-cheese.jpg",
       "name": "Cheddar Cheese",
       "category": "dairy",
       "priceCents": 699,
@@ -409,7 +409,7 @@
     },
     {
       "id": "38",
-      "image": "/img/products/butter.jpg",
+      "image": "../img/products/butter.jpg",
       "name": "Butter",
       "category": "dairy",
       "priceCents": 549,
@@ -420,7 +420,7 @@
     },
     {
       "id": "39",
-      "image": "/img/products/cream.jpg",
+      "image": "../img/products/heavy-cream.jpg",
       "name": "Heavy Cream",
       "category": "dairy",
       "priceCents": 349,
@@ -431,7 +431,7 @@
     },
     {
       "id": "40",
-      "image": "/img/products/ice-cream.jpg",
+      "image": "../img/products/vanilla-ice-cream.jpg",
       "name": "Vanilla Ice Cream",
       "category": "dairy",
       "priceCents": 399,
@@ -442,7 +442,7 @@
     },
     {
       "id": "41",
-      "image": "/img/products/bread.jpg",
+      "image": "../img/products/whole-wheat-bread.jpg",
       "name": "Whole Wheat Bread",
       "category": "bakery",
       "priceCents": 279,
@@ -453,7 +453,7 @@
     },
     {
       "id": "42",
-      "image": "/img/products/croissant.jpg",
+      "image": "../img/products/croissant.jpg",
       "name": "Croissant",
       "category": "bakery",
       "priceCents": 249,
@@ -464,7 +464,7 @@
     },
     {
       "id": "43",
-      "image": "/img/products/donut.jpg",
+      "image": "../img/products/glazed-donuts.jpg",
       "name": "Glazed Donuts",
       "category": "bakery",
       "priceCents": 349,
@@ -475,7 +475,7 @@
     },
     {
       "id": "44",
-      "image": "/img/products/bagel.jpg",
+      "image": "../img/products/bagels.jpg",
       "name": "Bagels",
       "category": "bakery",
       "priceCents": 299,
@@ -486,7 +486,7 @@
     },
     {
       "id": "45",
-      "image": "/img/products/muffin.jpg",
+      "image": "../img/products/blueberry-muffins.jpg",
       "name": "Blueberry Muffins",
       "category": "bakery",
       "priceCents": 399,
@@ -497,7 +497,7 @@
     },
     {
       "id": "46",
-      "image": "/img/products/egg.jpg",
+      "image": "../img/products/eggs-dozen.jpg",
       "name": "Eggs (Dozen)",
       "category": "breakfast",
       "priceCents": 349,
@@ -508,7 +508,7 @@
     },
     {
       "id": "47",
-      "image": "/img/products/cereal.jpg",
+      "image": "../img/products/whole-grain-cereal.jpg",
       "name": "Whole Grain Cereal",
       "category": "breakfast",
       "priceCents": 449,
@@ -519,7 +519,7 @@
     },
     {
       "id": "48",
-      "image": "/img/products/oatmeal.jpg",
+      "image": "../img/products/oatmeal.jpg",
       "name": "Oatmeal",
       "category": "breakfast",
       "priceCents": 299,
@@ -530,7 +530,7 @@
     },
     {
       "id": "49",
-      "image": "/img/products/pancakes.jpg",
+      "image": "../img/products/pancake-mix.jpg",
       "name": "Pancake Mix",
       "category": "breakfast",
       "priceCents": 349,
@@ -541,7 +541,7 @@
     },
     {
       "id": "50",
-      "image": "/img/products/jam.jpg",
+      "image": "../img/products/strawberry-jam.jpg",
       "name": "Strawberry Jam",
       "category": "breakfast",
       "priceCents": 399,
@@ -552,7 +552,7 @@
     },
     {
       "id": "51",
-      "image": "/img/products/honey.jpg",
+      "image": "../img/products/raw-honey.jpg",
       "name": "Raw Honey",
       "category": "condiments",
       "priceCents": 599,
@@ -563,7 +563,7 @@
     },
     {
       "id": "52",
-      "image": "/img/products/ketchup.jpg",
+      "image": "../img/products/tomato-ketchup.jpg",
       "name": "Tomato Ketchup",
       "category": "condiments",
       "priceCents": 249,
@@ -574,7 +574,7 @@
     },
     {
       "id": "53",
-      "image": "/img/products/mayo.jpg",
+      "image": "../img/products/mayonnaise.jpg",
       "name": "Mayonnaise",
       "category": "condiments",
       "priceCents": 349,
@@ -585,7 +585,7 @@
     },
     {
       "id": "54",
-      "image": "/img/products/mustard.jpg",
+      "image": "../img/products/dijon-mustard.jpg",
       "name": "Dijon Mustard",
       "category": "condiments",
       "priceCents": 299,
@@ -596,7 +596,7 @@
     },
     {
       "id": "55",
-      "image": "/img/products/vinegar.jpg",
+      "image": "../img/products/balsamic-vinegar.jpg",
       "name": "Balsamic Vinegar",
       "category": "condiments",
       "priceCents": 449,
@@ -607,7 +607,7 @@
     },
     {
       "id": "56",
-      "image": "/img/products/olive-oil.jpg",
+      "image": "../img/products/extra-virgin-olive-oil.jpg",
       "name": "Extra Virgin Olive Oil",
       "category": "oils",
       "priceCents": 899,
@@ -618,7 +618,7 @@
     },
     {
       "id": "57",
-      "image": "/img/products/coconut-oil.jpg",
+      "image": "../img/products/coconut-oil.jpg",
       "name": "Coconut Oil",
       "category": "oils",
       "priceCents": 749,
@@ -629,7 +629,7 @@
     },
     {
       "id": "58",
-      "image": "/img/products/sunflower-oil.jpg",
+      "image": "../img/products/sunflower-oil.jpg",
       "name": "Sunflower Oil",
       "category": "oils",
       "priceCents": 549,
@@ -640,7 +640,7 @@
     },
     {
       "id": "59",
-      "image": "/img/products/salt.jpg",
+      "image": "../img/products/sea-salt.jpg",
       "name": "Sea Salt",
       "category": "seasonings",
       "priceCents": 199,
@@ -651,7 +651,7 @@
     },
     {
       "id": "60",
-      "image": "/img/products/pepper.jpg",
+      "image": "../img/products/black-pepper.jpg",
       "name": "Black Pepper",
       "category": "seasonings",
       "priceCents": 249,
@@ -662,7 +662,7 @@
     },
     {
       "id": "61",
-      "image": "/img/products/cinnamon.jpg",
+      "image": "../img/products/cinnamon.jpg",
       "name": "Cinnamon",
       "category": "seasonings",
       "priceCents": 349,
@@ -673,7 +673,7 @@
     },
     {
       "id": "62",
-      "image": "/img/products/paprika.jpg",
+      "image": "../img/products/paprika.jpg",
       "name": "Paprika",
       "category": "seasonings",
       "priceCents": 299,
@@ -684,7 +684,7 @@
     },
     {
       "id": "63",
-      "image": "/img/products/cumin.jpg",
+      "image": "../img/products/cumin.jpg",
       "name": "Cumin",
       "category": "seasonings",
       "priceCents": 279,
@@ -695,7 +695,7 @@
     },
     {
       "id": "64",
-      "image": "/img/products/rice.jpg",
+      "image": "../img/products/white-rice.jpg",
       "name": "White Rice",
       "category": "grains",
       "priceCents": 299,
@@ -706,7 +706,7 @@
     },
     {
       "id": "65",
-      "image": "/img/products/brown-rice.jpg",
+      "image": "../img/products/brown-rice.jpg",
       "name": "Brown Rice",
       "category": "grains",
       "priceCents": 399,
@@ -717,7 +717,7 @@
     },
     {
       "id": "66",
-      "image": "/img/products/pasta.jpg",
+      "image": "../img/products/pasta.jpg",
       "name": "Pasta",
       "category": "grains",
       "priceCents": 179,
@@ -728,7 +728,7 @@
     },
     {
       "id": "67",
-      "image": "/img/products/quinoa.jpg",
+      "image": "../img/products/quinoa.jpg",
       "name": "Quinoa",
       "category": "grains",
       "priceCents": 649,
@@ -739,7 +739,7 @@
     },
     {
       "id": "68",
-      "image": "/img/products/flour.jpg",
+      "image": "../img/products/all-purpose-flour.jpg",
       "name": "All-Purpose Flour",
       "category": "baking",
       "priceCents": 249,
@@ -750,7 +750,7 @@
     },
     {
       "id": "69",
-      "image": "/img/products/sugar.jpg",
+      "image": "../img/products/white-sugar.jpg",
       "name": "White Sugar",
       "category": "baking",
       "priceCents": 199,
@@ -761,7 +761,7 @@
     },
     {
       "id": "70",
-      "image": "/img/products/brown-sugar.jpg",
+      "image": "../img/products/brown-sugar.jpg",
       "name": "Brown Sugar",
       "category": "baking",
       "priceCents": 229,
@@ -772,7 +772,7 @@
     },
     {
       "id": "71",
-      "image": "/img/products/baking-powder.jpg",
+      "image": "../img/products/baking-powder.jpg",
       "name": "Baking Powder",
       "category": "baking",
       "priceCents": 249,
@@ -783,7 +783,7 @@
     },
     {
       "id": "72",
-      "image": "/img/products/baking-soda.jpg",
+      "image": "../img/products/baking-soda.jpg",
       "name": "Baking Soda",
       "category": "baking",
       "priceCents": 199,
@@ -794,7 +794,7 @@
     },
     {
       "id": "73",
-      "image": "/img/products/chocolate.jpg",
+      "image": "../img/products/dark-chocolate-bar.jpg",
       "name": "Dark Chocolate Bar",
       "category": "sweets",
       "priceCents": 349,
@@ -805,7 +805,7 @@
     },
     {
       "id": "74",
-      "image": "/img/products/candy.jpg",
+      "image": "../img/products/gummy-bears.jpg",
       "name": "Gummy Bears",
       "category": "sweets",
       "priceCents": 249,
@@ -816,7 +816,7 @@
     },
     {
       "id": "75",
-      "image": "/img/products/cookies.jpg",
+      "image": "../img/products/chocolate-chip-cookies.jpg",
       "name": "Chocolate Chip Cookies",
       "category": "sweets",
       "priceCents": 299,
@@ -827,7 +827,7 @@
     },
     {
       "id": "76",
-      "image": "/img/products/coffee.jpg",
+      "image": "../img/products/ground-coffee.jpg",
       "name": "Ground Coffee",
       "category": "beverages",
       "priceCents": 799,
@@ -838,7 +838,7 @@
     },
     {
       "id": "77",
-      "image": "/img/products/tea.jpg",
+      "image": "../img/products/black-tea.jpg",
       "name": "Black Tea",
       "category": "beverages",
       "priceCents": 449,
@@ -849,7 +849,7 @@
     },
     {
       "id": "78",
-      "image": "/img/products/green-tea.jpg",
+      "image": "../img/products/green-tea.jpg",
       "name": "Green Tea",
       "category": "beverages",
       "priceCents": 499,
@@ -860,7 +860,7 @@
     },
     {
       "id": "79",
-      "image": "/img/products/juice.jpg",
+      "image": "../img/products/orange-juice.jpg",
       "name": "Orange Juice",
       "category": "beverages",
       "priceCents": 349,
@@ -871,7 +871,7 @@
     },
     {
       "id": "80",
-      "image": "/img/products/water.jpg",
+      "image": "../img/products/bottled-water.jpg",
       "name": "Bottled Water",
       "category": "beverages",
       "priceCents": 199,
@@ -882,7 +882,7 @@
     },
     {
       "id": "81",
-      "image": "/img/products/soda.jpg",
+      "image": "../img/products/cola-soda.jpg",
       "name": "Cola Soda",
       "category": "beverages",
       "priceCents": 249,
@@ -893,7 +893,7 @@
     },
     {
       "id": "82",
-      "image": "/img/products/nuts.jpg",
+      "image": "../img/products/almonds.jpg",
       "name": "Almonds",
       "category": "snacks",
       "priceCents": 749,
@@ -904,7 +904,7 @@
     },
     {
       "id": "83",
-      "image": "/img/products/cashew.jpg",
+      "image": "../img/products/cashew-nuts.jpg",
       "name": "Cashew Nuts",
       "category": "snacks",
       "priceCents": 899,
@@ -915,7 +915,7 @@
     },
     {
       "id": "84",
-      "image": "/img/products/peanut-butter.jpg",
+      "image": "../img/products/peanut-butter.jpg",
       "name": "Peanut Butter",
       "category": "snacks",
       "priceCents": 449,
@@ -926,7 +926,7 @@
     },
     {
       "id": "85",
-      "image": "/img/products/granola.jpg",
+      "image": "../img/products/granola.jpg",
       "name": "Granola",
       "category": "snacks",
       "priceCents": 399,
@@ -937,7 +937,7 @@
     },
     {
       "id": "86",
-      "image": "/img/products/popcorn.jpg",
+      "image": "../img/products/popcorn.jpg",
       "name": "Popcorn",
       "category": "snacks",
       "priceCents": 249,
@@ -948,7 +948,7 @@
     },
     {
       "id": "87",
-      "image": "/img/products/chips.jpg",
+      "image": "../img/products/potato-chips.jpg",
       "name": "Potato Chips",
       "category": "snacks",
       "priceCents": 199,
@@ -959,7 +959,7 @@
     },
     {
       "id": "88",
-      "image": "/img/products/pickles.jpg",
+      "image": "../img/products/dill-pickles.jpg",
       "name": "Dill Pickles",
       "category": "preservation",
       "priceCents": 349,
@@ -970,7 +970,7 @@
     },
     {
       "id": "89",
-      "image": "/img/products/canned-beans.jpg",
+      "image": "../img/products/canned-black-beans.jpg",
       "name": "Canned Black Beans",
       "category": "canned",
       "priceCents": 149,
@@ -981,7 +981,7 @@
     },
     {
       "id": "90",
-      "image": "/img/products/canned-tomato.jpg",
+      "image": "../img/products/canned-tomatoes.jpg",
       "name": "Canned Tomatoes",
       "category": "canned",
       "priceCents": 179,
@@ -992,7 +992,7 @@
     },
     {
       "id": "91",
-      "image": "/img/products/olive.jpg",
+      "image": "../img/products/kalamata-olives.jpg",
       "name": "Kalamata Olives",
       "category": "preservation",
       "priceCents": 449,
@@ -1003,7 +1003,7 @@
     },
     {
       "id": "92",
-      "image": "/img/products/milk-chocolate.jpg",
+      "image": "../img/products/milk-chocolate.jpg",
       "name": "Milk Chocolate",
       "category": "sweets",
       "priceCents": 299,
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "93",
-      "image": "/img/products/protein-bar.jpg",
+      "image": "../img/products/protein-bar.jpg",
       "name": "Protein Bar",
       "category": "snacks",
       "priceCents": 199,
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "94",
-      "image": "/img/products/avocado.jpg",
+      "image": "../img/products/fresh-avocados.jpg",
       "name": "Fresh Avocados",
       "category": "fruits",
       "priceCents": 399,
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "95",
-      "image": "/img/products/coconut.jpg",
+      "image": "../img/products/fresh-coconut.jpg",
       "name": "Fresh Coconut",
       "category": "fruits",
       "priceCents": 349,
@@ -1047,7 +1047,7 @@
     },
     {
       "id": "96",
-      "image": "/img/products/kiwi.jpg",
+      "image": "../img/products/kiwi-fruit.jpg",
       "name": "Kiwi Fruit",
       "category": "fruits",
       "priceCents": 329,
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "97",
-      "image": "/img/products/papaya.jpg",
+      "image": "../img/products/papaya.jpg",
       "name": "Papaya",
       "category": "fruits",
       "priceCents": 379,
@@ -1069,7 +1069,7 @@
     },
     {
       "id": "98",
-      "image": "/img/products/radish.jpg",
+      "image": "../img/products/radish.jpg",
       "name": "Radish",
       "category": "vegetables",
       "priceCents": 149,
@@ -1080,7 +1080,7 @@
     },
     {
       "id": "99",
-      "image": "/img/products/cauliflower.jpg",
+      "image": "../img/products/cauliflower.jpg",
       "name": "Cauliflower",
       "category": "vegetables",
       "priceCents": 279,
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "100",
-      "image": "/img/products/cabbage.jpg",
+      "image": "../img/products/green-cabbage.jpg",
       "name": "Green Cabbage",
       "category": "vegetables",
       "priceCents": 169,
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "101",
-      "image": "/img/products/pomegranate.jpg",
+      "image": "../img/products/pomegranate.jpg",
       "name": "Pomegranate",
       "category": "fruits",
       "priceCents": 549,
@@ -1113,7 +1113,7 @@
     },
     {
       "id": "102",
-      "image": "/img/products/peach.jpg",
+      "image": "../img/products/fresh-peaches.jpg",
       "name": "Fresh Peaches",
       "category": "fruits",
       "priceCents": 329,

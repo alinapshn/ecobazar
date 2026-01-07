@@ -532,4 +532,11 @@ a {
   align-items: center;
   gap: 12px;
   margin-top: 8px;
+}
+
+.deals {
+  background: #edf2ee;
+}
+.deals__wrapper {
+  padding: 100px 0;
 }/*# sourceMappingURL=main.css.map */
