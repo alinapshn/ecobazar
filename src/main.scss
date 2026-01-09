@@ -16,14 +16,14 @@
 }
 
 // Base
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/mixins";
-@import "./base/base";
+@import "./assets/styles/base/reset";
+@import "./assets/styles/base/vars";
+@import "./assets/styles/base/mixins";
+@import "./assets/styles/base/base";
 
 // blocks
-@import "./blocks/header";
-@import "./blocks/props";
-@import "./blocks/intro-prod";
-@import "./blocks/banners";
-@import './blocks/deals';
+// @import "./blocks/header";
+// @import "./blocks/props";
+// @import "./blocks/intro-prod";
+// @import "./blocks/banners";
+// @import './blocks/deals';
