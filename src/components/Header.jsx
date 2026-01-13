@@ -3,6 +3,9 @@ import LogoIcon from "../assets/img/icons/logo.svg";
 import SearchIcon from "../assets/img/icons/search.svg";
 import FavoritesIcon from "../assets/img/icons/favorites.svg";
 import CartIcon from "../assets/img/icons/cart.svg";
+import ArrowDownIcon from "../assets/img/icons/arrow-down.svg";
+import MenuIcon from "../assets/img/icons/menu.svg";
+import PhoneIcon from "../assets/img/icons/phone.svg";
 import "./header.scss";
 
 export function Header() {
@@ -17,10 +20,10 @@ export function Header() {
 
           <div className="header__user">
             <button className="header__user-lang">
-              Eng <img src="./img/icons/arrow-down.svg" />
+              Eng <img src={ArrowDownIcon} />
             </button>
             <button className="header__user-currency">
-              USD <img src="./img/icons/arrow-down.svg" />
+              USD <img src={ArrowDownIcon} />
             </button>
             <div className="header__user-auth">
               <a href="#" className="header__link">
@@ -66,7 +69,6 @@ export function Header() {
               </div>
             </NavLink>
           </div>
-
         </div>
       </div>
 
@@ -74,30 +76,29 @@ export function Header() {
         <div className="header__wrapper container">
           <div className="header__bottom-nav">
             <button className="header__bottom-menu">
-              <img src="./img/icons/menu.svg" />
+              <img src={MenuIcon} />
               <p>All Categories</p>
-              <img src="./img/icons/arrow-down.svg" />
             </button>
 
             <ul className="header__list">
               <li>
                 <a href="" className="header__list-item">
-                  Home <img src="./img/icons/arrow-down.svg" />
+                  Home <img src={ArrowDownIcon} />
                 </a>
               </li>
               <li>
                 <a href="" className="header__list-item">
-                  Shop <img src="./img/icons/arrow-down.svg" />
+                  Shop <img src={ArrowDownIcon} />
                 </a>
               </li>
               <li>
                 <a href="" className="header__list-item">
-                  Pages <img src="./img/icons/arrow-down.svg" />
+                  Pages <img src={ArrowDownIcon} />
                 </a>
               </li>
               <li>
                 <a href="" className="header__list-item">
-                  Blog <img src="./img/icons/arrow-down.svg" />
+                  Blog <img src={ArrowDownIcon} />
                 </a>
               </li>
               <li>
@@ -114,7 +115,7 @@ export function Header() {
           </div>
 
           <div className="header__bottom-phone">
-            <img src="./img/icons/phone.svg" />
+            <img src={PhoneIcon} />
             <p>(219) 555-0114</p>
           </div>
         </div>
