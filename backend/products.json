@@ -1,6 +1,79 @@
 {
   "products": [
     {
+      "id": "01",
+      "image": "../img/products/green-apples.jpg",
+      "name": "Green Apples",
+      "category": "fruits",
+      "priceCents": 2099,
+      "discountPriceCents": 1499,
+      "inStock": true,
+      "tags": ["apples", "green", "tart", "organic", "fresh"]
+    },
+    {
+      "id": "02",
+      "image": "../img/products/surjapur-mango.jpg",
+      "name": "Surjapur Mango",
+      "category": "fruits",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["mango", "yellow", "sweet", "tropical", "fresh"]
+    },
+    {
+      "id": "03",
+      "image": "../img/products/red-tomatos.jpg",
+      "name": "Red Tomatos",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["tomatos", "red", "juicy", "organic", "fresh"]
+    },
+    {
+      "id": "04",
+      "image": "../img/products/fresh-cauliflower.jpg",
+      "name": "Fresh Cauliflower",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["cauliflower", "white", "crunchy", "organic", "fresh"]
+    },
+    {
+      "id": "05",
+      "image": "../img/products/green-lettuce.jpg",
+      "name": "Green Lettuce",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["lettuce", "green", "leafy", "organic", "fresh"]
+    },
+    {
+      "id": "06",
+      "image": "../img/products/green-capsicum.jpg",
+      "name": "Green Capsicum",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["capsicum", "green", "crunchy", "organic", "fresh"]
+    },
+    {
+      "id": "07",
+      "image": "../img/products/green-chilli.jpg",
+      "name": "Green Chilli",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["chilli", "green", "spicy", "organic", "fresh"]
+    },
+    {
+      "id": "08",
+      "image": "../img/products/eggplant.jpg",
+      "name": "Eggplant",
+      "category": "vegetables",
+      "priceCents": 1499,
+      "inStock": true,
+      "tags": ["eggplant", "purple", "tender", "organic", "fresh"]
+    },
+    {
       "id": "1",
       "image": "../img/products/fresh-red-apples.jpg",
       "name": "Fresh Red Apples",
