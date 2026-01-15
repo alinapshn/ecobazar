@@ -1,6 +1,7 @@
 import { Header } from "../../components/Header";
 import { Props } from "./Props";
 import { IntroProducts } from "./IntroProducts";
+import { Banners } from "./Banners";
 
 export function HomePage() {
   return (
@@ -8,6 +9,7 @@ export function HomePage() {
       <Header />
       <Props />
       <IntroProducts />
+      <Banners />
     </>
   );
 }
