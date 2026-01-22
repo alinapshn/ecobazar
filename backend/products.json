@@ -1,1097 +1,1095 @@
-{
-  "products": [
-    {
-      "id": "01",
-      "image": "../img/products/green-apples.jpg",
-      "name": "Green Apples",
-      "category": "fruits",
-      "priceCents": 2099,
-      "discountPriceCents": 1499,
-      "inStock": true,
-      "tags": ["apples", "green", "tart", "organic", "fresh"]
-    },
-    {
-      "id": "02",
-      "image": "../img/products/surjapur-mango.jpg",
-      "name": "Surjapur Mango",
-      "category": "fruits",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["mango", "yellow", "sweet", "tropical", "fresh"]
-    },
-    {
-      "id": "03",
-      "image": "../img/products/red-tomatos.jpg",
-      "name": "Red Tomatos",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["tomatos", "red", "juicy", "organic", "fresh"]
-    },
-    {
-      "id": "04",
-      "image": "../img/products/fresh-cauliflower.jpg",
-      "name": "Fresh Cauliflower",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["cauliflower", "white", "crunchy", "organic", "fresh"]
-    },
-    {
-      "id": "05",
-      "image": "../img/products/green-lettuce.jpg",
-      "name": "Green Lettuce",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["lettuce", "green", "leafy", "organic", "fresh"]
-    },
-    {
-      "id": "06",
-      "image": "../img/products/green-capsicum.jpg",
-      "name": "Green Capsicum",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["capsicum", "green", "crunchy", "organic", "fresh"]
-    },
-    {
-      "id": "07",
-      "image": "../img/products/green-chilli.jpg",
-      "name": "Green Chilli",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["chilli", "green", "spicy", "organic", "fresh"]
-    },
-    {
-      "id": "08",
-      "image": "../img/products/eggplant.jpg",
-      "name": "Eggplant",
-      "category": "vegetables",
-      "priceCents": 1499,
-      "inStock": true,
-      "tags": ["eggplant", "purple", "tender", "organic", "fresh"]
-    },
-    {
-      "id": "1",
-      "image": "../img/products/fresh-red-apples.jpg",
-      "name": "Fresh Red Apples",
-      "category": "fruits",
-      "priceCents": 299,
-      "discountPriceCents": 249,
-      "inStock": true,
-      "tags": ["apples", "red", "sweet", "organic", "fresh"]
-    },
-    {
-      "id": "2",
-      "image": "../img/products/yellow-bananas.jpg",
-      "name": "Yellow Bananas",
-      "category": "fruits",
-      "priceCents": 199,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["bananas", "yellow", "tropical", "healthy"]
-    },
-    {
-      "id": "3",
-      "image": "../img/products/juicy-oranges.jpg",
-      "name": "Juicy Oranges",
-      "category": "fruits",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["oranges", "citrus", "juicy", "vitamin-c"]
-    },
-    {
-      "id": "4",
-      "image": "../img/products/fresh-strawberries.jpg",
-      "name": "Fresh Strawberries",
-      "category": "fruits",
-      "priceCents": 499,
-      "discountPriceCents": 399,
-      "inStock": true,
-      "tags": ["strawberries", "berries", "red", "sweet", "fresh"]
-    },
-    {
-      "id": "5",
-      "image": "../img/products/blueberries.jpg",
-      "name": "Blueberries",
-      "category": "fruits",
-      "priceCents": 599,
-      "discountPriceCents": 0,
-      "inStock": false,
-      "tags": ["blueberries", "berries", "antioxidants", "healthy"]
-    },
-    {
-      "id": "6",
-      "image": "../img/products/sweet-mangoes.jpg",
-      "name": "Sweet Mangoes",
-      "category": "fruits",
-      "priceCents": 449,
-      "discountPriceCents": 349,
-      "inStock": true,
-      "tags": ["mango", "tropical", "sweet", "king-of-fruits"]
-    },
-    {
-      "id": "7",
-      "image": "../img/products/green-grapes.jpg",
-      "name": "Green Grapes",
-      "category": "fruits",
-      "priceCents": 399,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["grapes", "green", "fresh", "seedless"]
-    },
-    {
-      "id": "8",
-      "image": "../img/products/lemons.jpg",
-      "name": "Lemons",
-      "category": "fruits",
-      "priceCents": 249,
-      "discountPriceCents": 199,
-      "inStock": true,
-      "tags": ["lemon", "citrus", "sour", "vitamin-c"]
-    },
-    {
-      "id": "9",
-      "image": "../img/products/watermelon.jpg",
-      "name": "Watermelon",
-      "category": "fruits",
-      "priceCents": 699,
-      "discountPriceCents": 549,
-      "inStock": true,
-      "tags": ["watermelon", "summer", "sweet", "hydrating"]
-    },
-    {
-      "id": "10",
-      "image": "../img/products/fresh-pineapple.jpg",
-      "name": "Fresh Pineapple",
-      "category": "fruits",
-      "priceCents": 449,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["pineapple", "tropical", "sweet", "vitamin-c"]
-    },
-    {
-      "id": "11",
-      "image": "../img/products/fresh-carrots.jpg",
-      "name": "Fresh Carrots",
-      "category": "vegetables",
-      "priceCents": 179,
-      "discountPriceCents": 129,
-      "inStock": true,
-      "tags": ["carrots", "orange", "crunchy", "healthy", "organic"]
-    },
-    {
-      "id": "12",
-      "image": "../img/products/green-broccoli.jpg",
-      "name": "Green Broccoli",
-      "category": "vegetables",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["broccoli", "green", "vegetables", "healthy"]
-    },
-    {
-      "id": "13",
-      "image": "../img/products/fresh-spinach.jpg",
-      "name": "Fresh Spinach",
-      "category": "vegetables",
-      "priceCents": 199,
-      "discountPriceCents": 159,
-      "inStock": true,
-      "tags": ["spinach", "green", "leafy", "iron", "healthy"]
-    },
-    {
-      "id": "14",
-      "image": "../img/products/ripe-tomatoes.jpg",
-      "name": "Ripe Tomatoes",
-      "category": "vegetables",
-      "priceCents": 229,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["tomatoes", "red", "fresh", "juicy"]
-    },
-    {
-      "id": "15",
-      "image": "../img/products/potatoes.jpg",
-      "name": "Potatoes",
-      "category": "vegetables",
-      "priceCents": 149,
-      "discountPriceCents": 99,
-      "inStock": true,
-      "tags": ["potatoes", "starchy", "cooking", "bulk"]
-    },
-    {
-      "id": "16",
-      "image": "../img/products/yellow-onions.jpg",
-      "name": "Yellow Onions",
-      "category": "vegetables",
-      "priceCents": 129,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["onions", "yellow", "cooking", "flavor"]
-    },
-    {
-      "id": "17",
-      "image": "../img/products/fresh-garlic.jpg",
-      "name": "Fresh Garlic",
-      "category": "vegetables",
-      "priceCents": 199,
-      "discountPriceCents": 149,
-      "inStock": true,
-      "tags": ["garlic", "white", "aromatic", "cooking"]
-    },
-    {
-      "id": "18",
-      "image": "../img/products/lettuce.jpg",
-      "name": "Lettuce",
-      "category": "vegetables",
-      "priceCents": 169,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["lettuce", "green", "salad", "fresh"]
-    },
-    {
-      "id": "19",
-      "image": "../img/products/fresh-cucumbers.jpg",
-      "name": "Fresh Cucumbers",
-      "category": "vegetables",
-      "priceCents": 189,
-      "discountPriceCents": 139,
-      "inStock": true,
-      "tags": ["cucumber", "green", "fresh", "crispy"]
-    },
-    {
-      "id": "20",
-      "image": "../img/products/bell-peppers-mix.jpg",
-      "name": "Bell Peppers Mix",
-      "category": "vegetables",
-      "priceCents": 279,
-      "discountPriceCents": 0,
-      "inStock": false,
-      "tags": ["peppers", "bell", "colorful", "sweet"]
-    },
-    {
-      "id": "21",
-      "image": "../img/products/fresh-chicken-breast.jpg",
-      "name": "Fresh Chicken Breast",
-      "category": "meat",
-      "priceCents": 899,
-      "discountPriceCents": 749,
-      "inStock": true,
-      "tags": ["chicken", "breast", "lean", "protein", "fresh"]
-    },
-    {
-      "id": "22",
-      "image": "../img/products/ground-beef.jpg",
-      "name": "Ground Beef",
-      "category": "meat",
-      "priceCents": 1299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["beef", "ground", "lean", "cooking"]
-    },
-    {
-      "id": "23",
-      "image": "../img/products/pork-chops.jpg",
-      "name": "Pork Chops",
-      "category": "meat",
-      "priceCents": 799,
-      "discountPriceCents": 599,
-      "inStock": true,
-      "tags": ["pork", "chops", "tender", "cooking"]
-    },
-    {
-      "id": "24",
-      "image": "../img/products/turkey-breast.jpg",
-      "name": "Turkey Breast",
-      "category": "meat",
-      "priceCents": 1099,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["turkey", "breast", "lean", "healthy"]
-    },
-    {
-      "id": "25",
-      "image": "../img/products/lamb-chops.jpg",
-      "name": "Lamb Chops",
-      "category": "meat",
-      "priceCents": 1599,
-      "discountPriceCents": 1199,
-      "inStock": true,
-      "tags": ["lamb", "chops", "tender", "premium"]
-    },
-    {
-      "id": "26",
-      "image": "../img/products/bacon-strips.jpg",
-      "name": "Bacon Strips",
-      "category": "meat",
-      "priceCents": 649,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["bacon", "crispy", "breakfast", "smoky"]
-    },
-    {
-      "id": "27",
-      "image": "../img/products/italian-sausage.jpg",
-      "name": "Italian Sausage",
-      "category": "meat",
-      "priceCents": 749,
-      "discountPriceCents": 599,
-      "inStock": true,
-      "tags": ["sausage", "italian", "spiced", "cooking"]
-    },
-    {
-      "id": "28",
-      "image": "../img/products/sliced-ham.jpg",
-      "name": "Sliced Ham",
-      "category": "meat",
-      "priceCents": 899,
-      "discountPriceCents": 0,
-      "inStock": false,
-      "tags": ["ham", "sliced", "deli", "smoky"]
-    },
-    {
-      "id": "29",
-      "image": "../img/products/fresh-salmon.jpg",
-      "name": "Fresh Salmon",
-      "category": "fish",
-      "priceCents": 1899,
-      "discountPriceCents": 1499,
-      "inStock": true,
-      "tags": ["salmon", "fish", "omega3", "fresh", "premium"]
-    },
-    {
-      "id": "30",
-      "image": "../img/products/fresh-tuna.jpg",
-      "name": "Fresh Tuna",
-      "category": "fish",
-      "priceCents": 2099,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["tuna", "fish", "protein", "sushi"]
-    },
-    {
-      "id": "31",
-      "image": "../img/products/cod-fillets.jpg",
-      "name": "Cod Fillets",
-      "category": "fish",
-      "priceCents": 1299,
-      "discountPriceCents": 999,
-      "inStock": true,
-      "tags": ["cod", "fillets", "white-fish", "mild"]
-    },
-    {
-      "id": "32",
-      "image": "../img/products/shrimp.jpg",
-      "name": "Shrimp",
-      "category": "fish",
-      "priceCents": 1699,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["shrimp", "seafood", "protein", "cooking"]
-    },
-    {
-      "id": "33",
-      "image": "../img/products/tilapia-fillets.jpg",
-      "name": "Tilapia Fillets",
-      "category": "fish",
-      "priceCents": 999,
-      "discountPriceCents": 799,
-      "inStock": true,
-      "tags": ["tilapia", "fillets", "mild", "affordable"]
-    },
-    {
-      "id": "34",
-      "image": "../img/products/fresh-crab.jpg",
-      "name": "Fresh Crab",
-      "category": "fish",
-      "priceCents": 2399,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["crab", "seafood", "luxury", "fresh"]
-    },
-    {
-      "id": "35",
-      "image": "../img/products/whole-milk.jpg",
-      "name": "Whole Milk",
-      "category": "dairy",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["milk", "whole", "fresh", "calcium"]
-    },
-    {
-      "id": "36",
-      "image": "../img/products/greek-yogurt.jpg",
-      "name": "Greek Yogurt",
-      "category": "dairy",
-      "priceCents": 449,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["yogurt", "greek", "protein", "probiotic"]
-    },
-    {
-      "id": "37",
-      "image": "../img/products/cheddar-cheese.jpg",
-      "name": "Cheddar Cheese",
-      "category": "dairy",
-      "priceCents": 699,
-      "discountPriceCents": 549,
-      "inStock": true,
-      "tags": ["cheese", "cheddar", "sharp", "sliced"]
-    },
-    {
-      "id": "38",
-      "image": "../img/products/butter.jpg",
-      "name": "Butter",
-      "category": "dairy",
-      "priceCents": 549,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["butter", "unsalted", "creamy", "cooking"]
-    },
-    {
-      "id": "39",
-      "image": "../img/products/heavy-cream.jpg",
-      "name": "Heavy Cream",
-      "category": "dairy",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["cream", "heavy", "whipping", "cooking"]
-    },
-    {
-      "id": "40",
-      "image": "../img/products/vanilla-ice-cream.jpg",
-      "name": "Vanilla Ice Cream",
-      "category": "dairy",
-      "priceCents": 399,
-      "discountPriceCents": 0,
-      "inStock": false,
-      "tags": ["ice-cream", "vanilla", "frozen", "dessert"]
-    },
-    {
-      "id": "41",
-      "image": "../img/products/whole-wheat-bread.jpg",
-      "name": "Whole Wheat Bread",
-      "category": "bakery",
-      "priceCents": 279,
-      "discountPriceCents": 199,
-      "inStock": true,
-      "tags": ["bread", "wheat", "whole", "healthy"]
-    },
-    {
-      "id": "42",
-      "image": "../img/products/croissant.jpg",
-      "name": "Croissant",
-      "category": "bakery",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["croissant", "pastry", "buttery", "french"]
-    },
-    {
-      "id": "43",
-      "image": "../img/products/glazed-donuts.jpg",
-      "name": "Glazed Donuts",
-      "category": "bakery",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["donuts", "glazed", "sweet", "breakfast"]
-    },
-    {
-      "id": "44",
-      "image": "../img/products/bagels.jpg",
-      "name": "Bagels",
-      "category": "bakery",
-      "priceCents": 299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["bagels", "plain", "breakfast", "chewy"]
-    },
-    {
-      "id": "45",
-      "image": "../img/products/blueberry-muffins.jpg",
-      "name": "Blueberry Muffins",
-      "category": "bakery",
-      "priceCents": 399,
-      "discountPriceCents": 319,
-      "inStock": true,
-      "tags": ["muffins", "blueberry", "sweet", "breakfast"]
-    },
-    {
-      "id": "46",
-      "image": "../img/products/eggs-dozen.jpg",
-      "name": "Eggs (Dozen)",
-      "category": "breakfast",
-      "priceCents": 349,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["eggs", "dozen", "protein", "fresh"]
-    },
-    {
-      "id": "47",
-      "image": "../img/products/whole-grain-cereal.jpg",
-      "name": "Whole Grain Cereal",
-      "category": "breakfast",
-      "priceCents": 449,
-      "discountPriceCents": 349,
-      "inStock": true,
-      "tags": ["cereal", "grain", "healthy", "breakfast"]
-    },
-    {
-      "id": "48",
-      "image": "../img/products/oatmeal.jpg",
-      "name": "Oatmeal",
-      "category": "breakfast",
-      "priceCents": 299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["oatmeal", "oats", "healthy", "breakfast"]
-    },
-    {
-      "id": "49",
-      "image": "../img/products/pancake-mix.jpg",
-      "name": "Pancake Mix",
-      "category": "breakfast",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["pancakes", "mix", "breakfast", "easy"]
-    },
-    {
-      "id": "50",
-      "image": "../img/products/strawberry-jam.jpg",
-      "name": "Strawberry Jam",
-      "category": "breakfast",
-      "priceCents": 399,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["jam", "strawberry", "sweet", "spread"]
-    },
-    {
-      "id": "51",
-      "image": "../img/products/raw-honey.jpg",
-      "name": "Raw Honey",
-      "category": "condiments",
-      "priceCents": 599,
-      "discountPriceCents": 479,
-      "inStock": true,
-      "tags": ["honey", "raw", "natural", "organic"]
-    },
-    {
-      "id": "52",
-      "image": "../img/products/tomato-ketchup.jpg",
-      "name": "Tomato Ketchup",
-      "category": "condiments",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["ketchup", "tomato", "condiment", "classic"]
-    },
-    {
-      "id": "53",
-      "image": "../img/products/mayonnaise.jpg",
-      "name": "Mayonnaise",
-      "category": "condiments",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["mayo", "mayonnaise", "creamy", "condiment"]
-    },
-    {
-      "id": "54",
-      "image": "../img/products/dijon-mustard.jpg",
-      "name": "Dijon Mustard",
-      "category": "condiments",
-      "priceCents": 299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["mustard", "dijon", "tangy", "condiment"]
-    },
-    {
-      "id": "55",
-      "image": "../img/products/balsamic-vinegar.jpg",
-      "name": "Balsamic Vinegar",
-      "category": "condiments",
-      "priceCents": 449,
-      "discountPriceCents": 349,
-      "inStock": true,
-      "tags": ["vinegar", "balsamic", "cooking", "premium"]
-    },
-    {
-      "id": "56",
-      "image": "../img/products/extra-virgin-olive-oil.jpg",
-      "name": "Extra Virgin Olive Oil",
-      "category": "oils",
-      "priceCents": 899,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["olive-oil", "extra-virgin", "cooking", "premium"]
-    },
-    {
-      "id": "57",
-      "image": "../img/products/coconut-oil.jpg",
-      "name": "Coconut Oil",
-      "category": "oils",
-      "priceCents": 749,
-      "discountPriceCents": 599,
-      "inStock": true,
-      "tags": ["coconut-oil", "organic", "cooking", "health"]
-    },
-    {
-      "id": "58",
-      "image": "../img/products/sunflower-oil.jpg",
-      "name": "Sunflower Oil",
-      "category": "oils",
-      "priceCents": 549,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["sunflower-oil", "cooking", "light", "affordable"]
-    },
-    {
-      "id": "59",
-      "image": "../img/products/sea-salt.jpg",
-      "name": "Sea Salt",
-      "category": "seasonings",
-      "priceCents": 199,
-      "discountPriceCents": 149,
-      "inStock": true,
-      "tags": ["salt", "sea", "seasoning", "cooking"]
-    },
-    {
-      "id": "60",
-      "image": "../img/products/black-pepper.jpg",
-      "name": "Black Pepper",
-      "category": "seasonings",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["pepper", "black", "seasoning", "spice"]
-    },
-    {
-      "id": "61",
-      "image": "../img/products/cinnamon.jpg",
-      "name": "Cinnamon",
-      "category": "seasonings",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["cinnamon", "spice", "sweet", "organic"]
-    },
-    {
-      "id": "62",
-      "image": "../img/products/paprika.jpg",
-      "name": "Paprika",
-      "category": "seasonings",
-      "priceCents": 299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["paprika", "spice", "red", "cooking"]
-    },
-    {
-      "id": "63",
-      "image": "../img/products/cumin.jpg",
-      "name": "Cumin",
-      "category": "seasonings",
-      "priceCents": 279,
-      "discountPriceCents": 219,
-      "inStock": true,
-      "tags": ["cumin", "spice", "aromatic", "cooking"]
-    },
-    {
-      "id": "64",
-      "image": "../img/products/white-rice.jpg",
-      "name": "White Rice",
-      "category": "grains",
-      "priceCents": 299,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["rice", "white", "cooking", "staple"]
-    },
-    {
-      "id": "65",
-      "image": "../img/products/brown-rice.jpg",
-      "name": "Brown Rice",
-      "category": "grains",
-      "priceCents": 399,
-      "discountPriceCents": 319,
-      "inStock": true,
-      "tags": ["rice", "brown", "healthy", "whole-grain"]
-    },
-    {
-      "id": "66",
-      "image": "../img/products/pasta.jpg",
-      "name": "Pasta",
-      "category": "grains",
-      "priceCents": 179,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["pasta", "italian", "cooking", "staple"]
-    },
-    {
-      "id": "67",
-      "image": "../img/products/quinoa.jpg",
-      "name": "Quinoa",
-      "category": "grains",
-      "priceCents": 649,
-      "discountPriceCents": 519,
-      "inStock": true,
-      "tags": ["quinoa", "superfood", "protein", "healthy"]
-    },
-    {
-      "id": "68",
-      "image": "../img/products/all-purpose-flour.jpg",
-      "name": "All-Purpose Flour",
-      "category": "baking",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["flour", "all-purpose", "baking", "cooking"]
-    },
-    {
-      "id": "69",
-      "image": "../img/products/white-sugar.jpg",
-      "name": "White Sugar",
-      "category": "baking",
-      "priceCents": 199,
-      "discountPriceCents": 149,
-      "inStock": true,
-      "tags": ["sugar", "white", "baking", "sweetener"]
-    },
-    {
-      "id": "70",
-      "image": "../img/products/brown-sugar.jpg",
-      "name": "Brown Sugar",
-      "category": "baking",
-      "priceCents": 229,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["sugar", "brown", "baking", "sweetener"]
-    },
-    {
-      "id": "71",
-      "image": "../img/products/baking-powder.jpg",
-      "name": "Baking Powder",
-      "category": "baking",
-      "priceCents": 249,
-      "discountPriceCents": 199,
-      "inStock": true,
-      "tags": ["baking-powder", "leavening", "baking", "cooking"]
-    },
-    {
-      "id": "72",
-      "image": "../img/products/baking-soda.jpg",
-      "name": "Baking Soda",
-      "category": "baking",
-      "priceCents": 199,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["baking-soda", "leavening", "cleaning", "multi-use"]
-    },
-    {
-      "id": "73",
-      "image": "../img/products/dark-chocolate-bar.jpg",
-      "name": "Dark Chocolate Bar",
-      "category": "sweets",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["chocolate", "dark", "premium", "sweet"]
-    },
-    {
-      "id": "74",
-      "image": "../img/products/gummy-bears.jpg",
-      "name": "Gummy Bears",
-      "category": "sweets",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["gummy", "candy", "sweet", "fun"]
-    },
-    {
-      "id": "75",
-      "image": "../img/products/chocolate-chip-cookies.jpg",
-      "name": "Chocolate Chip Cookies",
-      "category": "sweets",
-      "priceCents": 299,
-      "discountPriceCents": 239,
-      "inStock": true,
-      "tags": ["cookies", "chocolate", "sweet", "snack"]
-    },
-    {
-      "id": "76",
-      "image": "../img/products/ground-coffee.jpg",
-      "name": "Ground Coffee",
-      "category": "beverages",
-      "priceCents": 799,
-      "discountPriceCents": 599,
-      "inStock": true,
-      "tags": ["coffee", "ground", "arabica", "morning"]
-    },
-    {
-      "id": "77",
-      "image": "../img/products/black-tea.jpg",
-      "name": "Black Tea",
-      "category": "beverages",
-      "priceCents": 449,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["tea", "black", "premium", "healthy"]
-    },
-    {
-      "id": "78",
-      "image": "../img/products/green-tea.jpg",
-      "name": "Green Tea",
-      "category": "beverages",
-      "priceCents": 499,
-      "discountPriceCents": 399,
-      "inStock": true,
-      "tags": ["tea", "green", "antioxidants", "healthy"]
-    },
-    {
-      "id": "79",
-      "image": "../img/products/orange-juice.jpg",
-      "name": "Orange Juice",
-      "category": "beverages",
-      "priceCents": 349,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["juice", "orange", "fresh", "breakfast"]
-    },
-    {
-      "id": "80",
-      "image": "../img/products/bottled-water.jpg",
-      "name": "Bottled Water",
-      "category": "beverages",
-      "priceCents": 199,
-      "discountPriceCents": 149,
-      "inStock": true,
-      "tags": ["water", "bottled", "hydration", "bulk"]
-    },
-    {
-      "id": "81",
-      "image": "../img/products/cola-soda.jpg",
-      "name": "Cola Soda",
-      "category": "beverages",
-      "priceCents": 249,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["soda", "cola", "carbonated", "refreshing"]
-    },
-    {
-      "id": "82",
-      "image": "../img/products/almonds.jpg",
-      "name": "Almonds",
-      "category": "snacks",
-      "priceCents": 749,
-      "discountPriceCents": 599,
-      "inStock": true,
-      "tags": ["almonds", "nuts", "healthy", "snack"]
-    },
-    {
-      "id": "83",
-      "image": "../img/products/cashew-nuts.jpg",
-      "name": "Cashew Nuts",
-      "category": "snacks",
-      "priceCents": 899,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["cashews", "nuts", "creamy", "snack"]
-    },
-    {
-      "id": "84",
-      "image": "../img/products/peanut-butter.jpg",
-      "name": "Peanut Butter",
-      "category": "snacks",
-      "priceCents": 449,
-      "discountPriceCents": 359,
-      "inStock": true,
-      "tags": ["peanut-butter", "spread", "protein", "creamy"]
-    },
-    {
-      "id": "85",
-      "image": "../img/products/granola.jpg",
-      "name": "Granola",
-      "category": "snacks",
-      "priceCents": 399,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["granola", "cereal", "healthy", "breakfast"]
-    },
-    {
-      "id": "86",
-      "image": "../img/products/popcorn.jpg",
-      "name": "Popcorn",
-      "category": "snacks",
-      "priceCents": 249,
-      "discountPriceCents": 199,
-      "inStock": true,
-      "tags": ["popcorn", "snack", "salty", "movies"]
-    },
-    {
-      "id": "87",
-      "image": "../img/products/potato-chips.jpg",
-      "name": "Potato Chips",
-      "category": "snacks",
-      "priceCents": 199,
-      "discountPriceCents": 0,
-      "inStock": false,
-      "tags": ["chips", "potato", "crispy", "snack"]
-    },
-    {
-      "id": "88",
-      "image": "../img/products/dill-pickles.jpg",
-      "name": "Dill Pickles",
-      "category": "preservation",
-      "priceCents": 349,
-      "discountPriceCents": 279,
-      "inStock": true,
-      "tags": ["pickles", "dill", "fermented", "condiment"]
-    },
-    {
-      "id": "89",
-      "image": "../img/products/canned-black-beans.jpg",
-      "name": "Canned Black Beans",
-      "category": "canned",
-      "priceCents": 149,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["beans", "canned", "protein", "cooking"]
-    },
-    {
-      "id": "90",
-      "image": "../img/products/canned-tomatoes.jpg",
-      "name": "Canned Tomatoes",
-      "category": "canned",
-      "priceCents": 179,
-      "discountPriceCents": 139,
-      "inStock": true,
-      "tags": ["tomatoes", "canned", "cooking", "sauce"]
-    },
-    {
-      "id": "91",
-      "image": "../img/products/kalamata-olives.jpg",
-      "name": "Kalamata Olives",
-      "category": "preservation",
-      "priceCents": 449,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["olives", "kalamata", "greek", "salad"]
-    },
-    {
-      "id": "92",
-      "image": "../img/products/milk-chocolate.jpg",
-      "name": "Milk Chocolate",
-      "category": "sweets",
-      "priceCents": 299,
-      "discountPriceCents": 239,
-      "inStock": true,
-      "tags": ["chocolate", "milk", "sweet", "treat"]
-    },
-    {
-      "id": "93",
-      "image": "../img/products/protein-bar.jpg",
-      "name": "Protein Bar",
-      "category": "snacks",
-      "priceCents": 199,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["protein", "bar", "healthy", "energy"]
-    },
-    {
-      "id": "94",
-      "image": "../img/products/fresh-avocados.jpg",
-      "name": "Fresh Avocados",
-      "category": "fruits",
-      "priceCents": 399,
-      "discountPriceCents": 319,
-      "inStock": true,
-      "tags": ["avocado", "green", "healthy", "fresh"]
-    },
-    {
-      "id": "95",
-      "image": "../img/products/fresh-coconut.jpg",
-      "name": "Fresh Coconut",
-      "category": "fruits",
-      "priceCents": 349,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["coconut", "tropical", "fresh", "exotic"]
-    },
-    {
-      "id": "96",
-      "image": "../img/products/kiwi-fruit.jpg",
-      "name": "Kiwi Fruit",
-      "category": "fruits",
-      "priceCents": 329,
-      "discountPriceCents": 269,
-      "inStock": true,
-      "tags": ["kiwi", "green", "sweet", "tropical"]
-    },
-    {
-      "id": "97",
-      "image": "../img/products/papaya.jpg",
-      "name": "Papaya",
-      "category": "fruits",
-      "priceCents": 379,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["papaya", "tropical", "orange", "sweet"]
-    },
-    {
-      "id": "98",
-      "image": "../img/products/radish.jpg",
-      "name": "Radish",
-      "category": "vegetables",
-      "priceCents": 149,
-      "discountPriceCents": 109,
-      "inStock": true,
-      "tags": ["radish", "white", "crunchy", "fresh"]
-    },
-    {
-      "id": "99",
-      "image": "../img/products/cauliflower.jpg",
-      "name": "Cauliflower",
-      "category": "vegetables",
-      "priceCents": 279,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["cauliflower", "white", "healthy", "vegetables"]
-    },
-    {
-      "id": "100",
-      "image": "../img/products/green-cabbage.jpg",
-      "name": "Green Cabbage",
-      "category": "vegetables",
-      "priceCents": 169,
-      "discountPriceCents": 129,
-      "inStock": true,
-      "tags": ["cabbage", "green", "fresh", "affordable"]
-    },
-    {
-      "id": "101",
-      "image": "../img/products/pomegranate.jpg",
-      "name": "Pomegranate",
-      "category": "fruits",
-      "priceCents": 549,
-      "discountPriceCents": 439,
-      "inStock": true,
-      "tags": ["pomegranate", "red", "sweet", "antioxidants"]
-    },
-    {
-      "id": "102",
-      "image": "../img/products/fresh-peaches.jpg",
-      "name": "Fresh Peaches",
-      "category": "fruits",
-      "priceCents": 329,
-      "discountPriceCents": 0,
-      "inStock": true,
-      "tags": ["peach", "yellow", "sweet", "summer"]
-    }
-  ]
-}
+[
+  {
+    "id": "01",
+    "image": "../img/products/green-apples.jpg",
+    "name": "Green Apples",
+    "category": "fruits",
+    "priceCents": 2099,
+    "discountPriceCents": 1499,
+    "inStock": true,
+    "tags": ["apples", "green", "tart", "organic", "fresh"]
+  },
+  {
+    "id": "02",
+    "image": "../img/products/surjapur-mango.jpg",
+    "name": "Surjapur Mango",
+    "category": "fruits",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["mango", "yellow", "sweet", "tropical", "fresh"]
+  },
+  {
+    "id": "03",
+    "image": "../img/products/red-tomatos.jpg",
+    "name": "Red Tomatos",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["tomatos", "red", "juicy", "organic", "fresh"]
+  },
+  {
+    "id": "04",
+    "image": "../img/products/fresh-cauliflower.jpg",
+    "name": "Fresh Cauliflower",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["cauliflower", "white", "crunchy", "organic", "fresh"]
+  },
+  {
+    "id": "05",
+    "image": "../img/products/green-lettuce.jpg",
+    "name": "Green Lettuce",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["lettuce", "green", "leafy", "organic", "fresh"]
+  },
+  {
+    "id": "06",
+    "image": "../img/products/green-capsicum.jpg",
+    "name": "Green Capsicum",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["capsicum", "green", "crunchy", "organic", "fresh"]
+  },
+  {
+    "id": "07",
+    "image": "../img/products/green-chilli.jpg",
+    "name": "Green Chilli",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["chilli", "green", "spicy", "organic", "fresh"]
+  },
+  {
+    "id": "08",
+    "image": "../img/products/eggplant.jpg",
+    "name": "Eggplant",
+    "category": "vegetables",
+    "priceCents": 1499,
+    "inStock": true,
+    "tags": ["eggplant", "purple", "tender", "organic", "fresh"]
+  },
+  {
+    "id": "1",
+    "image": "../img/products/fresh-red-apples.jpg",
+    "name": "Fresh Red Apples",
+    "category": "fruits",
+    "priceCents": 299,
+    "discountPriceCents": 249,
+    "inStock": true,
+    "tags": ["apples", "red", "sweet", "organic", "fresh"]
+  },
+  {
+    "id": "2",
+    "image": "../img/products/yellow-bananas.jpg",
+    "name": "Yellow Bananas",
+    "category": "fruits",
+    "priceCents": 199,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["bananas", "yellow", "tropical", "healthy"]
+  },
+  {
+    "id": "3",
+    "image": "../img/products/juicy-oranges.jpg",
+    "name": "Juicy Oranges",
+    "category": "fruits",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["oranges", "citrus", "juicy", "vitamin-c"]
+  },
+  {
+    "id": "4",
+    "image": "../img/products/fresh-strawberries.jpg",
+    "name": "Fresh Strawberries",
+    "category": "fruits",
+    "priceCents": 499,
+    "discountPriceCents": 399,
+    "inStock": true,
+    "tags": ["strawberries", "berries", "red", "sweet", "fresh"]
+  },
+  {
+    "id": "5",
+    "image": "../img/products/blueberries.jpg",
+    "name": "Blueberries",
+    "category": "fruits",
+    "priceCents": 599,
+    "discountPriceCents": 0,
+    "inStock": false,
+    "tags": ["blueberries", "berries", "antioxidants", "healthy"]
+  },
+  {
+    "id": "6",
+    "image": "../img/products/sweet-mangoes.jpg",
+    "name": "Sweet Mangoes",
+    "category": "fruits",
+    "priceCents": 449,
+    "discountPriceCents": 349,
+    "inStock": true,
+    "tags": ["mango", "tropical", "sweet", "king-of-fruits"]
+  },
+  {
+    "id": "7",
+    "image": "../img/products/green-grapes.jpg",
+    "name": "Green Grapes",
+    "category": "fruits",
+    "priceCents": 399,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["grapes", "green", "fresh", "seedless"]
+  },
+  {
+    "id": "8",
+    "image": "../img/products/lemons.jpg",
+    "name": "Lemons",
+    "category": "fruits",
+    "priceCents": 249,
+    "discountPriceCents": 199,
+    "inStock": true,
+    "tags": ["lemon", "citrus", "sour", "vitamin-c"]
+  },
+  {
+    "id": "9",
+    "image": "../img/products/watermelon.jpg",
+    "name": "Watermelon",
+    "category": "fruits",
+    "priceCents": 699,
+    "discountPriceCents": 549,
+    "inStock": true,
+    "tags": ["watermelon", "summer", "sweet", "hydrating"]
+  },
+  {
+    "id": "10",
+    "image": "../img/products/fresh-pineapple.jpg",
+    "name": "Fresh Pineapple",
+    "category": "fruits",
+    "priceCents": 449,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["pineapple", "tropical", "sweet", "vitamin-c"]
+  },
+  {
+    "id": "11",
+    "image": "../img/products/fresh-carrots.jpg",
+    "name": "Fresh Carrots",
+    "category": "vegetables",
+    "priceCents": 179,
+    "discountPriceCents": 129,
+    "inStock": true,
+    "tags": ["carrots", "orange", "crunchy", "healthy", "organic"]
+  },
+  {
+    "id": "12",
+    "image": "../img/products/green-broccoli.jpg",
+    "name": "Green Broccoli",
+    "category": "vegetables",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["broccoli", "green", "vegetables", "healthy"]
+  },
+  {
+    "id": "13",
+    "image": "../img/products/fresh-spinach.jpg",
+    "name": "Fresh Spinach",
+    "category": "vegetables",
+    "priceCents": 199,
+    "discountPriceCents": 159,
+    "inStock": true,
+    "tags": ["spinach", "green", "leafy", "iron", "healthy"]
+  },
+  {
+    "id": "14",
+    "image": "../img/products/ripe-tomatoes.jpg",
+    "name": "Ripe Tomatoes",
+    "category": "vegetables",
+    "priceCents": 229,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["tomatoes", "red", "fresh", "juicy"]
+  },
+  {
+    "id": "15",
+    "image": "../img/products/potatoes.jpg",
+    "name": "Potatoes",
+    "category": "vegetables",
+    "priceCents": 149,
+    "discountPriceCents": 99,
+    "inStock": true,
+    "tags": ["potatoes", "starchy", "cooking", "bulk"]
+  },
+  {
+    "id": "16",
+    "image": "../img/products/yellow-onions.jpg",
+    "name": "Yellow Onions",
+    "category": "vegetables",
+    "priceCents": 129,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["onions", "yellow", "cooking", "flavor"]
+  },
+  {
+    "id": "17",
+    "image": "../img/products/fresh-garlic.jpg",
+    "name": "Fresh Garlic",
+    "category": "vegetables",
+    "priceCents": 199,
+    "discountPriceCents": 149,
+    "inStock": true,
+    "tags": ["garlic", "white", "aromatic", "cooking"]
+  },
+  {
+    "id": "18",
+    "image": "../img/products/lettuce.jpg",
+    "name": "Lettuce",
+    "category": "vegetables",
+    "priceCents": 169,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["lettuce", "green", "salad", "fresh"]
+  },
+  {
+    "id": "19",
+    "image": "../img/products/fresh-cucumbers.jpg",
+    "name": "Fresh Cucumbers",
+    "category": "vegetables",
+    "priceCents": 189,
+    "discountPriceCents": 139,
+    "inStock": true,
+    "tags": ["cucumber", "green", "fresh", "crispy"]
+  },
+  {
+    "id": "20",
+    "image": "../img/products/bell-peppers-mix.jpg",
+    "name": "Bell Peppers Mix",
+    "category": "vegetables",
+    "priceCents": 279,
+    "discountPriceCents": 0,
+    "inStock": false,
+    "tags": ["peppers", "bell", "colorful", "sweet"]
+  },
+  {
+    "id": "21",
+    "image": "../img/products/fresh-chicken-breast.jpg",
+    "name": "Fresh Chicken Breast",
+    "category": "meat",
+    "priceCents": 899,
+    "discountPriceCents": 749,
+    "inStock": true,
+    "tags": ["chicken", "breast", "lean", "protein", "fresh"]
+  },
+  {
+    "id": "22",
+    "image": "../img/products/ground-beef.jpg",
+    "name": "Ground Beef",
+    "category": "meat",
+    "priceCents": 1299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["beef", "ground", "lean", "cooking"]
+  },
+  {
+    "id": "23",
+    "image": "../img/products/pork-chops.jpg",
+    "name": "Pork Chops",
+    "category": "meat",
+    "priceCents": 799,
+    "discountPriceCents": 599,
+    "inStock": true,
+    "tags": ["pork", "chops", "tender", "cooking"]
+  },
+  {
+    "id": "24",
+    "image": "../img/products/turkey-breast.jpg",
+    "name": "Turkey Breast",
+    "category": "meat",
+    "priceCents": 1099,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["turkey", "breast", "lean", "healthy"]
+  },
+  {
+    "id": "25",
+    "image": "../img/products/lamb-chops.jpg",
+    "name": "Lamb Chops",
+    "category": "meat",
+    "priceCents": 1599,
+    "discountPriceCents": 1199,
+    "inStock": true,
+    "tags": ["lamb", "chops", "tender", "premium"]
+  },
+  {
+    "id": "26",
+    "image": "../img/products/bacon-strips.jpg",
+    "name": "Bacon Strips",
+    "category": "meat",
+    "priceCents": 649,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["bacon", "crispy", "breakfast", "smoky"]
+  },
+  {
+    "id": "27",
+    "image": "../img/products/italian-sausage.jpg",
+    "name": "Italian Sausage",
+    "category": "meat",
+    "priceCents": 749,
+    "discountPriceCents": 599,
+    "inStock": true,
+    "tags": ["sausage", "italian", "spiced", "cooking"]
+  },
+  {
+    "id": "28",
+    "image": "../img/products/sliced-ham.jpg",
+    "name": "Sliced Ham",
+    "category": "meat",
+    "priceCents": 899,
+    "discountPriceCents": 0,
+    "inStock": false,
+    "tags": ["ham", "sliced", "deli", "smoky"]
+  },
+  {
+    "id": "29",
+    "image": "../img/products/fresh-salmon.jpg",
+    "name": "Fresh Salmon",
+    "category": "fish",
+    "priceCents": 1899,
+    "discountPriceCents": 1499,
+    "inStock": true,
+    "tags": ["salmon", "fish", "omega3", "fresh", "premium"]
+  },
+  {
+    "id": "30",
+    "image": "../img/products/fresh-tuna.jpg",
+    "name": "Fresh Tuna",
+    "category": "fish",
+    "priceCents": 2099,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["tuna", "fish", "protein", "sushi"]
+  },
+  {
+    "id": "31",
+    "image": "../img/products/cod-fillets.jpg",
+    "name": "Cod Fillets",
+    "category": "fish",
+    "priceCents": 1299,
+    "discountPriceCents": 999,
+    "inStock": true,
+    "tags": ["cod", "fillets", "white-fish", "mild"]
+  },
+  {
+    "id": "32",
+    "image": "../img/products/shrimp.jpg",
+    "name": "Shrimp",
+    "category": "fish",
+    "priceCents": 1699,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["shrimp", "seafood", "protein", "cooking"]
+  },
+  {
+    "id": "33",
+    "image": "../img/products/tilapia-fillets.jpg",
+    "name": "Tilapia Fillets",
+    "category": "fish",
+    "priceCents": 999,
+    "discountPriceCents": 799,
+    "inStock": true,
+    "tags": ["tilapia", "fillets", "mild", "affordable"]
+  },
+  {
+    "id": "34",
+    "image": "../img/products/fresh-crab.jpg",
+    "name": "Fresh Crab",
+    "category": "fish",
+    "priceCents": 2399,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["crab", "seafood", "luxury", "fresh"]
+  },
+  {
+    "id": "35",
+    "image": "../img/products/whole-milk.jpg",
+    "name": "Whole Milk",
+    "category": "dairy",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["milk", "whole", "fresh", "calcium"]
+  },
+  {
+    "id": "36",
+    "image": "../img/products/greek-yogurt.jpg",
+    "name": "Greek Yogurt",
+    "category": "dairy",
+    "priceCents": 449,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["yogurt", "greek", "protein", "probiotic"]
+  },
+  {
+    "id": "37",
+    "image": "../img/products/cheddar-cheese.jpg",
+    "name": "Cheddar Cheese",
+    "category": "dairy",
+    "priceCents": 699,
+    "discountPriceCents": 549,
+    "inStock": true,
+    "tags": ["cheese", "cheddar", "sharp", "sliced"]
+  },
+  {
+    "id": "38",
+    "image": "../img/products/butter.jpg",
+    "name": "Butter",
+    "category": "dairy",
+    "priceCents": 549,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["butter", "unsalted", "creamy", "cooking"]
+  },
+  {
+    "id": "39",
+    "image": "../img/products/heavy-cream.jpg",
+    "name": "Heavy Cream",
+    "category": "dairy",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["cream", "heavy", "whipping", "cooking"]
+  },
+  {
+    "id": "40",
+    "image": "../img/products/vanilla-ice-cream.jpg",
+    "name": "Vanilla Ice Cream",
+    "category": "dairy",
+    "priceCents": 399,
+    "discountPriceCents": 0,
+    "inStock": false,
+    "tags": ["ice-cream", "vanilla", "frozen", "dessert"]
+  },
+  {
+    "id": "41",
+    "image": "../img/products/whole-wheat-bread.jpg",
+    "name": "Whole Wheat Bread",
+    "category": "bakery",
+    "priceCents": 279,
+    "discountPriceCents": 199,
+    "inStock": true,
+    "tags": ["bread", "wheat", "whole", "healthy"]
+  },
+  {
+    "id": "42",
+    "image": "../img/products/croissant.jpg",
+    "name": "Croissant",
+    "category": "bakery",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["croissant", "pastry", "buttery", "french"]
+  },
+  {
+    "id": "43",
+    "image": "../img/products/glazed-donuts.jpg",
+    "name": "Glazed Donuts",
+    "category": "bakery",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["donuts", "glazed", "sweet", "breakfast"]
+  },
+  {
+    "id": "44",
+    "image": "../img/products/bagels.jpg",
+    "name": "Bagels",
+    "category": "bakery",
+    "priceCents": 299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["bagels", "plain", "breakfast", "chewy"]
+  },
+  {
+    "id": "45",
+    "image": "../img/products/blueberry-muffins.jpg",
+    "name": "Blueberry Muffins",
+    "category": "bakery",
+    "priceCents": 399,
+    "discountPriceCents": 319,
+    "inStock": true,
+    "tags": ["muffins", "blueberry", "sweet", "breakfast"]
+  },
+  {
+    "id": "46",
+    "image": "../img/products/eggs-dozen.jpg",
+    "name": "Eggs (Dozen)",
+    "category": "breakfast",
+    "priceCents": 349,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["eggs", "dozen", "protein", "fresh"]
+  },
+  {
+    "id": "47",
+    "image": "../img/products/whole-grain-cereal.jpg",
+    "name": "Whole Grain Cereal",
+    "category": "breakfast",
+    "priceCents": 449,
+    "discountPriceCents": 349,
+    "inStock": true,
+    "tags": ["cereal", "grain", "healthy", "breakfast"]
+  },
+  {
+    "id": "48",
+    "image": "../img/products/oatmeal.jpg",
+    "name": "Oatmeal",
+    "category": "breakfast",
+    "priceCents": 299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["oatmeal", "oats", "healthy", "breakfast"]
+  },
+  {
+    "id": "49",
+    "image": "../img/products/pancake-mix.jpg",
+    "name": "Pancake Mix",
+    "category": "breakfast",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["pancakes", "mix", "breakfast", "easy"]
+  },
+  {
+    "id": "50",
+    "image": "../img/products/strawberry-jam.jpg",
+    "name": "Strawberry Jam",
+    "category": "breakfast",
+    "priceCents": 399,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["jam", "strawberry", "sweet", "spread"]
+  },
+  {
+    "id": "51",
+    "image": "../img/products/raw-honey.jpg",
+    "name": "Raw Honey",
+    "category": "condiments",
+    "priceCents": 599,
+    "discountPriceCents": 479,
+    "inStock": true,
+    "tags": ["honey", "raw", "natural", "organic"]
+  },
+  {
+    "id": "52",
+    "image": "../img/products/tomato-ketchup.jpg",
+    "name": "Tomato Ketchup",
+    "category": "condiments",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["ketchup", "tomato", "condiment", "classic"]
+  },
+  {
+    "id": "53",
+    "image": "../img/products/mayonnaise.jpg",
+    "name": "Mayonnaise",
+    "category": "condiments",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["mayo", "mayonnaise", "creamy", "condiment"]
+  },
+  {
+    "id": "54",
+    "image": "../img/products/dijon-mustard.jpg",
+    "name": "Dijon Mustard",
+    "category": "condiments",
+    "priceCents": 299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["mustard", "dijon", "tangy", "condiment"]
+  },
+  {
+    "id": "55",
+    "image": "../img/products/balsamic-vinegar.jpg",
+    "name": "Balsamic Vinegar",
+    "category": "condiments",
+    "priceCents": 449,
+    "discountPriceCents": 349,
+    "inStock": true,
+    "tags": ["vinegar", "balsamic", "cooking", "premium"]
+  },
+  {
+    "id": "56",
+    "image": "../img/products/extra-virgin-olive-oil.jpg",
+    "name": "Extra Virgin Olive Oil",
+    "category": "oils",
+    "priceCents": 899,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["olive-oil", "extra-virgin", "cooking", "premium"]
+  },
+  {
+    "id": "57",
+    "image": "../img/products/coconut-oil.jpg",
+    "name": "Coconut Oil",
+    "category": "oils",
+    "priceCents": 749,
+    "discountPriceCents": 599,
+    "inStock": true,
+    "tags": ["coconut-oil", "organic", "cooking", "health"]
+  },
+  {
+    "id": "58",
+    "image": "../img/products/sunflower-oil.jpg",
+    "name": "Sunflower Oil",
+    "category": "oils",
+    "priceCents": 549,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["sunflower-oil", "cooking", "light", "affordable"]
+  },
+  {
+    "id": "59",
+    "image": "../img/products/sea-salt.jpg",
+    "name": "Sea Salt",
+    "category": "seasonings",
+    "priceCents": 199,
+    "discountPriceCents": 149,
+    "inStock": true,
+    "tags": ["salt", "sea", "seasoning", "cooking"]
+  },
+  {
+    "id": "60",
+    "image": "../img/products/black-pepper.jpg",
+    "name": "Black Pepper",
+    "category": "seasonings",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["pepper", "black", "seasoning", "spice"]
+  },
+  {
+    "id": "61",
+    "image": "../img/products/cinnamon.jpg",
+    "name": "Cinnamon",
+    "category": "seasonings",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["cinnamon", "spice", "sweet", "organic"]
+  },
+  {
+    "id": "62",
+    "image": "../img/products/paprika.jpg",
+    "name": "Paprika",
+    "category": "seasonings",
+    "priceCents": 299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["paprika", "spice", "red", "cooking"]
+  },
+  {
+    "id": "63",
+    "image": "../img/products/cumin.jpg",
+    "name": "Cumin",
+    "category": "seasonings",
+    "priceCents": 279,
+    "discountPriceCents": 219,
+    "inStock": true,
+    "tags": ["cumin", "spice", "aromatic", "cooking"]
+  },
+  {
+    "id": "64",
+    "image": "../img/products/white-rice.jpg",
+    "name": "White Rice",
+    "category": "grains",
+    "priceCents": 299,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["rice", "white", "cooking", "staple"]
+  },
+  {
+    "id": "65",
+    "image": "../img/products/brown-rice.jpg",
+    "name": "Brown Rice",
+    "category": "grains",
+    "priceCents": 399,
+    "discountPriceCents": 319,
+    "inStock": true,
+    "tags": ["rice", "brown", "healthy", "whole-grain"]
+  },
+  {
+    "id": "66",
+    "image": "../img/products/pasta.jpg",
+    "name": "Pasta",
+    "category": "grains",
+    "priceCents": 179,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["pasta", "italian", "cooking", "staple"]
+  },
+  {
+    "id": "67",
+    "image": "../img/products/quinoa.jpg",
+    "name": "Quinoa",
+    "category": "grains",
+    "priceCents": 649,
+    "discountPriceCents": 519,
+    "inStock": true,
+    "tags": ["quinoa", "superfood", "protein", "healthy"]
+  },
+  {
+    "id": "68",
+    "image": "../img/products/all-purpose-flour.jpg",
+    "name": "All-Purpose Flour",
+    "category": "baking",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["flour", "all-purpose", "baking", "cooking"]
+  },
+  {
+    "id": "69",
+    "image": "../img/products/white-sugar.jpg",
+    "name": "White Sugar",
+    "category": "baking",
+    "priceCents": 199,
+    "discountPriceCents": 149,
+    "inStock": true,
+    "tags": ["sugar", "white", "baking", "sweetener"]
+  },
+  {
+    "id": "70",
+    "image": "../img/products/brown-sugar.jpg",
+    "name": "Brown Sugar",
+    "category": "baking",
+    "priceCents": 229,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["sugar", "brown", "baking", "sweetener"]
+  },
+  {
+    "id": "71",
+    "image": "../img/products/baking-powder.jpg",
+    "name": "Baking Powder",
+    "category": "baking",
+    "priceCents": 249,
+    "discountPriceCents": 199,
+    "inStock": true,
+    "tags": ["baking-powder", "leavening", "baking", "cooking"]
+  },
+  {
+    "id": "72",
+    "image": "../img/products/baking-soda.jpg",
+    "name": "Baking Soda",
+    "category": "baking",
+    "priceCents": 199,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["baking-soda", "leavening", "cleaning", "multi-use"]
+  },
+  {
+    "id": "73",
+    "image": "../img/products/dark-chocolate-bar.jpg",
+    "name": "Dark Chocolate Bar",
+    "category": "sweets",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["chocolate", "dark", "premium", "sweet"]
+  },
+  {
+    "id": "74",
+    "image": "../img/products/gummy-bears.jpg",
+    "name": "Gummy Bears",
+    "category": "sweets",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["gummy", "candy", "sweet", "fun"]
+  },
+  {
+    "id": "75",
+    "image": "../img/products/chocolate-chip-cookies.jpg",
+    "name": "Chocolate Chip Cookies",
+    "category": "sweets",
+    "priceCents": 299,
+    "discountPriceCents": 239,
+    "inStock": true,
+    "tags": ["cookies", "chocolate", "sweet", "snack"]
+  },
+  {
+    "id": "76",
+    "image": "../img/products/ground-coffee.jpg",
+    "name": "Ground Coffee",
+    "category": "beverages",
+    "priceCents": 799,
+    "discountPriceCents": 599,
+    "inStock": true,
+    "tags": ["coffee", "ground", "arabica", "morning"]
+  },
+  {
+    "id": "77",
+    "image": "../img/products/black-tea.jpg",
+    "name": "Black Tea",
+    "category": "beverages",
+    "priceCents": 449,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["tea", "black", "premium", "healthy"]
+  },
+  {
+    "id": "78",
+    "image": "../img/products/green-tea.jpg",
+    "name": "Green Tea",
+    "category": "beverages",
+    "priceCents": 499,
+    "discountPriceCents": 399,
+    "inStock": true,
+    "tags": ["tea", "green", "antioxidants", "healthy"]
+  },
+  {
+    "id": "79",
+    "image": "../img/products/orange-juice.jpg",
+    "name": "Orange Juice",
+    "category": "beverages",
+    "priceCents": 349,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["juice", "orange", "fresh", "breakfast"]
+  },
+  {
+    "id": "80",
+    "image": "../img/products/bottled-water.jpg",
+    "name": "Bottled Water",
+    "category": "beverages",
+    "priceCents": 199,
+    "discountPriceCents": 149,
+    "inStock": true,
+    "tags": ["water", "bottled", "hydration", "bulk"]
+  },
+  {
+    "id": "81",
+    "image": "../img/products/cola-soda.jpg",
+    "name": "Cola Soda",
+    "category": "beverages",
+    "priceCents": 249,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["soda", "cola", "carbonated", "refreshing"]
+  },
+  {
+    "id": "82",
+    "image": "../img/products/almonds.jpg",
+    "name": "Almonds",
+    "category": "snacks",
+    "priceCents": 749,
+    "discountPriceCents": 599,
+    "inStock": true,
+    "tags": ["almonds", "nuts", "healthy", "snack"]
+  },
+  {
+    "id": "83",
+    "image": "../img/products/cashew-nuts.jpg",
+    "name": "Cashew Nuts",
+    "category": "snacks",
+    "priceCents": 899,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["cashews", "nuts", "creamy", "snack"]
+  },
+  {
+    "id": "84",
+    "image": "../img/products/peanut-butter.jpg",
+    "name": "Peanut Butter",
+    "category": "snacks",
+    "priceCents": 449,
+    "discountPriceCents": 359,
+    "inStock": true,
+    "tags": ["peanut-butter", "spread", "protein", "creamy"]
+  },
+  {
+    "id": "85",
+    "image": "../img/products/granola.jpg",
+    "name": "Granola",
+    "category": "snacks",
+    "priceCents": 399,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["granola", "cereal", "healthy", "breakfast"]
+  },
+  {
+    "id": "86",
+    "image": "../img/products/popcorn.jpg",
+    "name": "Popcorn",
+    "category": "snacks",
+    "priceCents": 249,
+    "discountPriceCents": 199,
+    "inStock": true,
+    "tags": ["popcorn", "snack", "salty", "movies"]
+  },
+  {
+    "id": "87",
+    "image": "../img/products/potato-chips.jpg",
+    "name": "Potato Chips",
+    "category": "snacks",
+    "priceCents": 199,
+    "discountPriceCents": 0,
+    "inStock": false,
+    "tags": ["chips", "potato", "crispy", "snack"]
+  },
+  {
+    "id": "88",
+    "image": "../img/products/dill-pickles.jpg",
+    "name": "Dill Pickles",
+    "category": "preservation",
+    "priceCents": 349,
+    "discountPriceCents": 279,
+    "inStock": true,
+    "tags": ["pickles", "dill", "fermented", "condiment"]
+  },
+  {
+    "id": "89",
+    "image": "../img/products/canned-black-beans.jpg",
+    "name": "Canned Black Beans",
+    "category": "canned",
+    "priceCents": 149,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["beans", "canned", "protein", "cooking"]
+  },
+  {
+    "id": "90",
+    "image": "../img/products/canned-tomatoes.jpg",
+    "name": "Canned Tomatoes",
+    "category": "canned",
+    "priceCents": 179,
+    "discountPriceCents": 139,
+    "inStock": true,
+    "tags": ["tomatoes", "canned", "cooking", "sauce"]
+  },
+  {
+    "id": "91",
+    "image": "../img/products/kalamata-olives.jpg",
+    "name": "Kalamata Olives",
+    "category": "preservation",
+    "priceCents": 449,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["olives", "kalamata", "greek", "salad"]
+  },
+  {
+    "id": "92",
+    "image": "../img/products/milk-chocolate.jpg",
+    "name": "Milk Chocolate",
+    "category": "sweets",
+    "priceCents": 299,
+    "discountPriceCents": 239,
+    "inStock": true,
+    "tags": ["chocolate", "milk", "sweet", "treat"]
+  },
+  {
+    "id": "93",
+    "image": "../img/products/protein-bar.jpg",
+    "name": "Protein Bar",
+    "category": "snacks",
+    "priceCents": 199,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["protein", "bar", "healthy", "energy"]
+  },
+  {
+    "id": "94",
+    "image": "../img/products/fresh-avocados.jpg",
+    "name": "Fresh Avocados",
+    "category": "fruits",
+    "priceCents": 399,
+    "discountPriceCents": 319,
+    "inStock": true,
+    "tags": ["avocado", "green", "healthy", "fresh"]
+  },
+  {
+    "id": "95",
+    "image": "../img/products/fresh-coconut.jpg",
+    "name": "Fresh Coconut",
+    "category": "fruits",
+    "priceCents": 349,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["coconut", "tropical", "fresh", "exotic"]
+  },
+  {
+    "id": "96",
+    "image": "../img/products/kiwi-fruit.jpg",
+    "name": "Kiwi Fruit",
+    "category": "fruits",
+    "priceCents": 329,
+    "discountPriceCents": 269,
+    "inStock": true,
+    "tags": ["kiwi", "green", "sweet", "tropical"]
+  },
+  {
+    "id": "97",
+    "image": "../img/products/papaya.jpg",
+    "name": "Papaya",
+    "category": "fruits",
+    "priceCents": 379,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["papaya", "tropical", "orange", "sweet"]
+  },
+  {
+    "id": "98",
+    "image": "../img/products/radish.jpg",
+    "name": "Radish",
+    "category": "vegetables",
+    "priceCents": 149,
+    "discountPriceCents": 109,
+    "inStock": true,
+    "tags": ["radish", "white", "crunchy", "fresh"]
+  },
+  {
+    "id": "99",
+    "image": "../img/products/cauliflower.jpg",
+    "name": "Cauliflower",
+    "category": "vegetables",
+    "priceCents": 279,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["cauliflower", "white", "healthy", "vegetables"]
+  },
+  {
+    "id": "100",
+    "image": "../img/products/green-cabbage.jpg",
+    "name": "Green Cabbage",
+    "category": "vegetables",
+    "priceCents": 169,
+    "discountPriceCents": 129,
+    "inStock": true,
+    "tags": ["cabbage", "green", "fresh", "affordable"]
+  },
+  {
+    "id": "101",
+    "image": "../img/products/pomegranate.jpg",
+    "name": "Pomegranate",
+    "category": "fruits",
+    "priceCents": 549,
+    "discountPriceCents": 439,
+    "inStock": true,
+    "tags": ["pomegranate", "red", "sweet", "antioxidants"]
+  },
+  {
+    "id": "102",
+    "image": "../img/products/fresh-peaches.jpg",
+    "name": "Fresh Peaches",
+    "category": "fruits",
+    "priceCents": 329,
+    "discountPriceCents": 0,
+    "inStock": true,
+    "tags": ["peach", "yellow", "sweet", "summer"]
+  }
+]
