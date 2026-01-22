@@ -4,5 +4,5 @@ export function calcDiscount(priceCents, discountPriceCents) {
   }
 
   const discount = ((priceCents - discountPriceCents) / priceCents) * 100;
-  return Math.round(discount);
+  return `${Math.round(discount)}%`;
 }
