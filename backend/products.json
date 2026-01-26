@@ -1,6 +1,6 @@
 [
   {
-    "id": "01",
+    "id": "001",
     "image": "images/products/green-apples.jpg",
     "name": "Green Apples",
     "category": "fruits",
@@ -10,7 +10,7 @@
     "tags": ["apples", "green", "tart", "organic", "fresh"]
   },
   {
-    "id": "02",
+    "id": "002",
     "image": "images/products/surjapur-mango.jpg",
     "name": "Surjapur Mango",
     "category": "fruits",
@@ -19,7 +19,7 @@
     "tags": ["mango", "yellow", "sweet", "tropical", "fresh"]
   },
   {
-    "id": "03",
+    "id": "003",
     "image": "images/products/red-tomatos.jpg",
     "name": "Red Tomatos",
     "category": "vegetables",
@@ -28,7 +28,7 @@
     "tags": ["tomatos", "red", "juicy", "organic", "fresh"]
   },
   {
-    "id": "04",
+    "id": "004",
     "image": "images/products/fresh-cauliflower.jpg",
     "name": "Fresh Cauliflower",
     "category": "vegetables",
@@ -37,16 +37,16 @@
     "tags": ["cauliflower", "white", "crunchy", "organic", "fresh"]
   },
   {
-    "id": "05",
+    "id": "005",
     "image": "images/products/green-lettuce.jpg",
     "name": "Green Lettuce",
     "category": "vegetables",
-    "priceCents": 1499,
+    "priceCents": 900,
     "inStock": true,
     "tags": ["lettuce", "green", "leafy", "organic", "fresh"]
   },
   {
-    "id": "06",
+    "id": "006",
     "image": "images/products/green-capsicum.jpg",
     "name": "Green Capsicum",
     "category": "vegetables",
@@ -55,7 +55,7 @@
     "tags": ["capsicum", "green", "crunchy", "organic", "fresh"]
   },
   {
-    "id": "07",
+    "id": "007",
     "image": "images/products/green-chilli.jpg",
     "name": "Green Chilli",
     "category": "vegetables",
@@ -64,13 +64,31 @@
     "tags": ["chilli", "green", "spicy", "organic", "fresh"]
   },
   {
-    "id": "08",
+    "id": "008",
     "image": "images/products/eggplant.jpg",
     "name": "Eggplant",
     "category": "vegetables",
-    "priceCents": 1499,
+    "priceCents": 3400,
     "inStock": true,
     "tags": ["eggplant", "purple", "tender", "organic", "fresh"]
+  },
+  {
+    "id": "009",
+    "image": "images/products/fresh-indian-malta.jpg",
+    "name": "Fresh Indian Malta",
+    "category": "fruits",
+    "priceCents": 2000,
+    "inStock": true,
+    "tags": ["malta", "citrus", "sweet", "vitamin-c", "fresh"]
+  },
+  {
+    "id": "010",
+    "image": "images/products/chinese-cabbage.jpg",
+    "name": "Chinese cabbage",
+    "category": "vegetables",
+    "priceCents": 1200,
+    "inStock": true,
+    "tags": ["cabbage", "white", "crunchy", "organic", "fresh"]
   },
   {
     "id": "1",
