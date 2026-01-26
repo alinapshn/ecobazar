@@ -65,7 +65,7 @@
     }
 
     &__banner {
-        box-shadow: 0 16px 48px 0 $shadow;
+        box-shadow: 0 16px 48px 0 $shadow-props;
         border: 1px solid $gray-1;
         border-radius: 8px;
         display: flex;

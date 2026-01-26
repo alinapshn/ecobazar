@@ -20,7 +20,7 @@ export function IntroProducts() {
 
           <div className="intro-prod__products">
             {products.slice(0, 8).map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} variant={"intro"}/>
             ))}
           </div>
         </div>

@@ -3,12 +3,38 @@
   flex-direction: column;
   background-color: $white;
   gap: 5px;
+  justify-content: space-between;
   border: 1px solid $green-1;
   position: relative;
+  transition: all 0.3s ease;
 
   &:hover {
     border: 1px solid $hard-primary;
-    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+    box-shadow: 0 0 12px 0 $shadow-product-card-hover;
+
+    .product-card__info-name{
+      color: $hard-primary;
+    }
+
+    .product-card__info-cart {
+      background-color: $primary;
+
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  &--intro {
+    width: 330px;
+  }
+
+  &--default {
+    width: 312px;
+  }
+
+  &--featured {
+    width: 264px;
   }
 
   &__sale {
@@ -17,36 +43,93 @@
     border-radius: 4px;
     background-color: $danger;
     color: $white;
-    top: 20px;
-    left: 20px;
     font-size: $body-s;
 
     span {
       font-weight: 500;
     }
+
+    &--intro {
+      top: 20px;
+      left: 20px;
+    }
+
+    &--featured {
+      top: 16px;
+      left: 16px;
+    }
+
+    &--default {
+      top: 16px;
+      left: 16px;
+    }
   }
 
   &__info {
-    padding: 16px 24px 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    &--featured {
+      padding: 12px;
+    }
+
+    &--intro {
+      padding: 16px 24px 20px 20px;
+    }
+
+    &--default {
+      padding: 16px;
+    }
+
+    &-text {
+      &--featured {
+        max-height: 63px;
+      }
+    }
+
     &-name {
-      font-size: $body-m;
       color: $green-7;
+
+      &--featured,
+      &--default {
+        font-size: $body-s;
+      }
+
+      &--intro {
+        font-size: $body-m;
+      }
     }
 
     &-price {
-      font-size: $body-l;
       color: $green-9;
       font-weight: 500;
-      margin-bottom: 11px;
+
+      &--featured,
+      &--default {
+        font-size: $body-m;
+        margin-bottom: 6px;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      &--intro {
+        font-size: $body-l;
+        margin-bottom: 11px;
+      }
 
       span {
         font-size: $body-m;
         color: $green-4;
         text-decoration: line-through;
+      }
+    }
+
+    &-rating {
+      &--featured, &--default {
+        width: 60px;
       }
     }
 
@@ -61,6 +144,12 @@
       img {
         height: 20px;
         width: 20px;
+      }
+
+      &--featured, &--default {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
       }
     }
   }
