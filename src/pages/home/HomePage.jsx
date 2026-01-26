@@ -3,6 +3,8 @@ import { Props } from "./Props";
 import { IntroProducts } from "./IntroProducts";
 import { Banners } from "./Banners";
 import { Deals } from "./Deals";
+import { Featured } from "./Featured";
+import { products } from "../../../data/products";
 
 export function HomePage() {
   return (
@@ -12,6 +14,7 @@ export function HomePage() {
       <IntroProducts />
       <Banners />
       <Deals />
+      <Featured products={products} />
     </>
   );
 }
