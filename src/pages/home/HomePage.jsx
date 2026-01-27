@@ -6,6 +6,7 @@ import { Deals } from "./Deals";
 import { Featured } from "./Featured";
 import { Feedbacks } from "./Feedbacks";
 import { Video } from "./Video";
+import { News } from "./News";
 import { products } from "../../../data/products";
 
 export function HomePage() {
@@ -19,6 +20,7 @@ export function HomePage() {
       <Featured products={products} />
       <Feedbacks />
       <Video />
+      <News />
     </>
   );
 }
