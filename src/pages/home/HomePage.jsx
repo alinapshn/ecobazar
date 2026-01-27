@@ -4,6 +4,7 @@ import { IntroProducts } from "./IntroProducts";
 import { Banners } from "./Banners";
 import { Deals } from "./Deals";
 import { Featured } from "./Featured";
+import { Feedbacks } from "./Feedbacks";
 import { products } from "../../../data/products";
 
 export function HomePage() {
@@ -15,6 +16,7 @@ export function HomePage() {
       <Banners />
       <Deals />
       <Featured products={products} />
+      <Feedbacks />
     </>
   );
 }
