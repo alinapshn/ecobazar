@@ -7,6 +7,7 @@ import { Featured } from "./Featured";
 import { Feedbacks } from "./Feedbacks";
 import { Video } from "./Video";
 import { News } from "./News";
+import { Subscribe } from "../../components/Subscribe";
 import { products } from "../../../data/products";
 
 export function HomePage() {
@@ -21,6 +22,7 @@ export function HomePage() {
       <Feedbacks />
       <Video />
       <News />
+      <Subscribe />
     </>
   );
 }
