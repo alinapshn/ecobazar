@@ -8,6 +8,7 @@ import { Feedbacks } from "./Feedbacks";
 import { Video } from "./Video";
 import { News } from "./News";
 import { Subscribe } from "../../components/Subscribe";
+import { Footer } from "../../components/Footer";
 import { products } from "../../../data/products";
 
 export function HomePage() {
@@ -23,6 +24,7 @@ export function HomePage() {
       <Video />
       <News />
       <Subscribe />
+      <Footer />
     </>
   );
 }
