@@ -1,4 +1,4 @@
-import { ProductCard } from "./ProductCard";
+import { ProductCard } from "../../components/ProductCard";
 import "./featured.scss";
 
 const featuredIds = ["001", "009", "010", "005", "008"];

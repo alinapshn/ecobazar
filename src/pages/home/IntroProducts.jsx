@@ -1,5 +1,5 @@
 import { products } from "../../../data/products.js";
-import { ProductCard } from "./ProductCard.jsx";
+import { ProductCard } from "../../components/ProductCard";
 import "./introProducts.scss";
 
 export function IntroProducts() {

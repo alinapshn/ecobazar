@@ -1,10 +1,10 @@
-import { calcDiscount } from "../../utils/discount.js";
-import { formatCurrency } from "../../utils/money.js";
-import { useModal } from "../../context/ModalContext";
-import RatingIcon from "../../assets/img/icons/rating.svg";
-import CartIcon from "../../assets/img/icons/cart.svg";
-import QuickViewIcon from "../../assets/img/icons/quick-view.svg";
-import FavoritesIcon from "../../assets/img/icons/favorites.svg";
+import { calcDiscount } from "../utils/discount.js";
+import { formatCurrency } from "../utils/money.js";
+import { useModal } from "../context/ModalContext";
+import RatingIcon from "../assets/img/icons/rating.svg";
+import CartIcon from "../assets/img/icons/cart.svg";
+import QuickViewIcon from "../assets/img/icons/quick-view.svg";
+import FavoritesIcon from "../assets/img/icons/favorites.svg";
 import "./productCard.scss";
 
 export function ProductCard({ product, variant }) {
