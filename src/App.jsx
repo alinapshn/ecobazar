@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router";
 import { ModalProvider } from "./context/ModalProvider";
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/home/HomePage";
@@ -9,7 +10,9 @@ function App() {
     <ModalProvider>
       <Header />
       <main>
-        <HomePage />
+        <Routes>
+          <Route index element={<HomePage />} />
+        </Routes>
       </main>
       <Footer />
     </ModalProvider>
