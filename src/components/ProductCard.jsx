@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { calcDiscount } from "../utils/discount.js";
 import { formatCurrency } from "../utils/money.js";
 import { useModal } from "../context/ModalContext";
@@ -9,6 +10,8 @@ import "./productCard.scss";
 
 export function ProductCard({ product, variant }) {
   const { openModal } = useModal();
+  const productPatch = `/product/${product.id}`;
+
   return (
     <div className={`product-card product-card--${variant}`}>
       <div
@@ -34,16 +37,20 @@ export function ProductCard({ product, variant }) {
           </span>
         </p>
       ) : null}
-      <img src={product.image} />
+      <Link to={productPatch}>
+        <img src={product.image} />
+      </Link>
       <div className={`product-card__info product-card__info--${variant}`}>
         <div
           className={`product-card__info-text product-card__info-text--${variant}`}
         >
-          <p
-            className={`product-card__info-name product-card__info-name--${variant}`}
-          >
-            {product.name}
-          </p>
+          <Link to={productPatch}>
+            <p
+              className={`product-card__info-name product-card__info-name--${variant}`}
+            >
+              {product.name}
+            </p>
+          </Link>
           <p
             className={`product-card__info-price product-card__info-price--${variant}`}
           >
