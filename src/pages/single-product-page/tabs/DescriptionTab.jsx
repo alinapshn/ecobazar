@@ -1,7 +1,4 @@
-import VideoImage from "../../../assets/img/single-product-page/video.jpg";
-import PriceTagIcon from "../../../assets/img/single-product-page/icons/price-tag.svg";
-import LeafIcon from "../../../assets/img/single-product-page/icons/leaf.svg";
-import TriangleIcon from "../../../assets/img/single-product-page/icons/triangle.svg";
+import { ExtraVideoCard } from "./ExtraVideoCard";
 import "./descriptionTab.scss";
 
 export function DescriptionTab() {
@@ -50,28 +47,7 @@ export function DescriptionTab() {
         </div>
 
         <div className="description__add">
-          <div className="description__add-video">
-            <img src={VideoImage} />
-            <button className="description__add-button">
-              <img src={TriangleIcon} />
-            </button>
-          </div>
-          <div className="description__add-block">
-            <div className="description__add-item">
-              <img src={PriceTagIcon} />
-              <div>
-                <p>64% Discount</p>
-                <span>Save your 64% money with us</span>
-              </div>
-            </div>
-            <div className="description__add-item">
-              <img src={LeafIcon} />
-              <div>
-                <p>100% Organic</p>
-                <span>100% Organic Vegetables</span>
-              </div>
-            </div>
-          </div>
+          <ExtraVideoCard />
         </div>
       </div>
     </div>
