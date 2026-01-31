@@ -1,0 +1,71 @@
+.feedbacks-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 760px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &:not(last-child) {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 20px;
+    }
+
+    &-header {
+      display: flex;
+      gap: 12px;
+    }
+
+    &-info {
+      display: flex;
+      flex: 1 1;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    &-author {
+      font-weight: 500;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-9;
+    }
+
+    &-rating {
+      max-width: 80px;
+    }
+
+    &-date,
+    &-text {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-4;
+    }
+  }
+
+  &__button {
+    border-radius: 43px;
+    padding: 14px 32px;
+    background: rgba(86, 172, 89, 0.1);
+    font-weight: 600;
+    font-size: $body-s;
+    line-height: 120%;
+    color: $primary;
+  }
+}
