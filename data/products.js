@@ -32,3 +32,12 @@ export function getProductsInStock() {
 export function getProductsWithDiscount() {
   return products.filter((product) => product.hasDiscount());
 }
+
+export function getRelatedProducts(currentProduct, limit = 4) {
+  return products
+    .filter((product) => {
+     return product.category === currentProduct.category &&
+        product.id !== currentProduct.id;
+    })
+    .slice(0, limit);
+}
