@@ -1,0 +1,14 @@
+.related {
+  &__wrapper {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__list{
+   display: flex;
+   gap: 24px;
+   padding-top: 32px;
+  }
+}
