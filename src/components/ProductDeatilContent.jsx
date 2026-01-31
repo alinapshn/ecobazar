@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { calcDiscount } from "../utils/discount";
 import { formatCurrency } from "../utils/money";
 import RatingIcon from "../assets/img/icons/rating.svg";
@@ -14,6 +15,7 @@ import ExitIcon from "../assets/img/icons/exit.svg";
 import "./productDetailContent.scss";
 
 export function ProductDetailContent({ product, onClose, isModal = false }) {
+  const productPath = `/product/${product.id}`;
   return (
     <div
       className={`product-view__wrapper ${isModal ? "product-view--view" : ""}`}
@@ -25,19 +27,29 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
       )}
 
       <div className="product-view__image">
-        <img src={`/${product.image}`} alt={product.name} />
+        {isModal ? (
+          <Link to={productPath} onClick={onClose}>
+            <img src={`/${product.image}`} alt={product.name} />
+          </Link>
+        ) : (
+          <img src={`/${product.image}`} alt={product.name} />
+        )}
       </div>
 
       <div className="product-view__content">
         <div className="product-view__title">
           <div className="product-view__title-heading">
-            <h4>{product.name}</h4>
+            {isModal ? (
+              <Link to={productPath} onClick={onClose}>
+                <h4>{product.name}</h4>
+              </Link>
+            ) : (
+              <h4>{product.name}</h4>
+            )}
             {product.inStock ? (
               <p className="product-view__title-heading--true">In Stock</p>
             ) : (
-              <p className="product-view__title-heading--false">
-                Out of Stock
-              </p>
+              <p className="product-view__title-heading--false">Out of Stock</p>
             )}
           </div>
           <div className="product-view__title-rating">
