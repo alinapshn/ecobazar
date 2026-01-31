@@ -38,7 +38,7 @@ export function ProductCard({ product, variant }) {
         </p>
       ) : null}
       <Link to={productPatch}>
-        <img src={product.image} />
+        <img src={`/${product.image}`}/>
       </Link>
       <div className={`product-card__info product-card__info--${variant}`}>
         <div
