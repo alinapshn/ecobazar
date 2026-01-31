@@ -4,7 +4,6 @@ import SearchIcon from "../assets/img/icons/search.svg";
 import FavoritesIcon from "../assets/img/icons/favorites.svg";
 import CartIcon from "../assets/img/icons/cart.svg";
 import ArrowDownIcon from "../assets/img/icons/arrow-down.svg";
-import MenuIcon from "../assets/img/icons/menu.svg";
 import PhoneIcon from "../assets/img/icons/phone.svg";
 import "./header.scss";
 
@@ -75,21 +74,16 @@ export function Header() {
       <div className="header__bottom">
         <div className="header__wrapper container">
           <div className="header__bottom-nav">
-            <button className="header__bottom-menu">
-              <img src={MenuIcon} />
-              <p>All Categories</p>
-            </button>
-
             <ul className="header__list">
               <li>
-                <a href="" className="header__list-item">
-                  Home <img src={ArrowDownIcon} />
-                </a>
+                <NavLink to="/" className="header__list-item">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a href="" className="header__list-item">
-                  Shop <img src={ArrowDownIcon} />
-                </a>
+                <NavLink to="/shop" className="header__list-item">
+                  Shop
+                </NavLink>
               </li>
               <li>
                 <a href="" className="header__list-item">
@@ -97,19 +91,19 @@ export function Header() {
                 </a>
               </li>
               <li>
-                <a href="" className="header__list-item">
-                  Blog <img src={ArrowDownIcon} />
-                </a>
+                <NavLink to="/blog" className="header__list-item">
+                  Blog
+                </NavLink>
               </li>
               <li>
-                <a href="" className="header__list-item">
-                  About Us{" "}
-                </a>
+                <NavLink to="/about" className="header__list-item">
+                  About Us
+                </NavLink>
               </li>
               <li>
-                <a href="" className="header__list-item">
-                  Contact Us{" "}
-                </a>
+                <NavLink to="/contact" className="header__list-item">
+                  Contact Us
+                </NavLink>
               </li>
             </ul>
           </div>
