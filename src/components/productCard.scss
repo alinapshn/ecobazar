@@ -91,16 +91,23 @@
     }
   }
 
-  &__sale {
+  &__status {
     position: absolute;
     padding: 3px 8px;
     border-radius: 4px;
-    background-color: $danger;
     color: $white;
     font-size: $body-s;
 
     span {
       font-weight: 500;
+    }
+
+    &--sale {
+      background-color: $danger;
+    }
+
+    &--stock {
+      background-color: $gray-9;
     }
 
     &--intro {

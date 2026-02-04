@@ -29,16 +29,25 @@ export function ProductCard({ product, variant }) {
           <img src={QuickViewIcon} />
         </button>
       </div>
-      {product.discountPriceCents ? (
-        <p className={`product-card__sale product-card__sale--${variant}`}>
+      {!product.inStock ? (
+        <p
+          className={`product-card__status product-card__status--stock product-card__status--${variant}`}
+        >
+          Out of stock
+        </p>
+      ) : product.discountPriceCents ? (
+        <p
+          className={`product-card__status product-card__status--sale product-card__status--${variant}`}
+        >
           Sale{" "}
           <span>
             {calcDiscount(product.priceCents, product.discountPriceCents)}
           </span>
         </p>
       ) : null}
+
       <Link to={productPatch}>
-        <img src={`/${product.image}`}/>
+        <img src={`/${product.image}`} />
       </Link>
       <div className={`product-card__info product-card__info--${variant}`}>
         <div
