@@ -1,6 +1,9 @@
 import { useState, useMemo } from "react";
 import { products } from "../../../data/products";
 import { ShopHeader } from "./ShopHeader";
+import { Filters } from "./Filters";
+import { ProductsGrid } from "./ProductsGrid";
+import { Pagination } from "./Pagination";
 import "./shopPage.scss";
 
 export function ShopPage() {
@@ -96,6 +99,21 @@ export function ShopPage() {
             onReset={handleReset}
             isFiltered={isFiltered}
           />
+          <div className="shop-page__content">
+            <Filters
+              categories={categoriesList}
+              tempFilters={tempFilters}
+              setTempFilters={setTempFilters}
+            />
+            <div className="shop-page__content-grid">
+              <ProductsGrid products={currentItems} />
+              <Pagination
+                totalPages={totalPages}
+                currentPage={currentPage}
+                onPageChange={setCurrentPage}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
