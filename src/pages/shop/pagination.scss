@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  align-self: center;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 8px;
+    height: 36px;
+    width: 36px;
+    font-weight: 400;
+    font-size: $body-m;
+    line-height: 150%;
+    text-align: center;
+
+    &--unactive {
+      color: $gray-6;
+    }
+
+    &--active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
