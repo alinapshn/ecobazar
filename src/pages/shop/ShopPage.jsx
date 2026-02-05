@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { products } from "../../../data/products";
+import { ShopHeader } from "./ShopHeader";
 import "./shopPage.scss";
 
 export function ShopPage() {
@@ -88,7 +89,13 @@ export function ShopPage() {
     <section className="shop-page">
       <div className="container">
         <div className="shop-page__wrapper">
-    
+          <ShopHeader
+            count={filteredProducts.length}
+            isDirty={isDirty}
+            onApply={handleApply}
+            onReset={handleReset}
+            isFiltered={isFiltered}
+          />
         </div>
       </div>
     </section>
