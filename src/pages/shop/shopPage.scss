@@ -12,6 +12,8 @@
     justify-content: space-between;
 
     &-grid {
+      width: 100%;
+      max-width: 984px;
       display: flex;
       flex-direction: column;
       gap: 40px;
