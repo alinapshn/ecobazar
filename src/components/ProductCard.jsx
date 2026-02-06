@@ -46,9 +46,10 @@ export function ProductCard({ product, variant }) {
         </p>
       ) : null}
 
-      <Link to={productPatch}>
+      <Link className="product-card__image" to={productPatch}>
         <img src={`/${product.image}`} />
       </Link>
+
       <div className={`product-card__info product-card__info--${variant}`}>
         <div
           className={`product-card__info-text product-card__info-text--${variant}`}
