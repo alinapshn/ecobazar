@@ -1,7 +1,20 @@
+import { formatCurrency } from "../../utils/money";
 import { Accordion } from "./Accordion";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 import "./filters.scss";
 
-export function Filters({ categories, tempFilters, setTempFilters }) {
+export function Filters({
+  categories,
+  tempFilters,
+  setTempFilters,
+  minPrice,
+  maxPrice,
+}) {
+  const handlePriceChange = (value) => {
+    setTempFilters({ ...tempFilters, priceRange: value });
+  };
+
   return (
     <div className="filters">
       <Accordion title="All Categories">
@@ -37,12 +50,23 @@ export function Filters({ categories, tempFilters, setTempFilters }) {
       </Accordion>
 
       <Accordion title="Price">
-        <div className="filters__price-info">
-          Price:{" "}
-          <span>
-            {Math.round(tempFilters.priceRange[0] / 100)} —{" "}
-            {Math.round(tempFilters.priceRange[1] / 100)}
-          </span>
+        <div className="filters__price">
+          <Slider
+            range
+            min={minPrice} 
+            max={maxPrice} 
+            value={tempFilters.priceRange}
+            onChange={handlePriceChange}
+            step={100}
+          />
+
+          <div className="filters__price-values">
+            Price:{" "}
+            <span>
+              {formatCurrency(tempFilters.priceRange[0])} —{" "}
+              {formatCurrency(tempFilters.priceRange[1])}
+            </span>
+          </div>
         </div>
       </Accordion>
     </div>

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -65,6 +65,52 @@
 
     &-count {
       color: $gray-5;
+    }
+  }
+
+  &__price {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 20px 15px;
+
+    .rc-slider-rail {
+      background-color: $gray-1;
+      height: 6px;
+    }
+
+    .rc-slider-track {
+      background-color: $primary;
+      height: 6px;
+    }
+
+    .rc-slider-handle {
+      width: 18px;
+      height: 18px;
+      margin-top: -6px;
+      background-color: $white;
+      border: 2px solid $primary;
+      opacity: 1;
+      box-shadow: none;
+      transition: all 0.3s ease;
+
+      &:active,
+      &:hover,
+      &:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 3px rgba(0, 178, 7, 0.2);
+      }
+
+      &-values {
+        font-size: 14px;
+        color: $gray-7;
+        font-weight: 400;
+
+        span {
+          color: $gray-9;
+          margin-left: $body-s;
+        }
+      }
     }
   }
 }
