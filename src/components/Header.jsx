@@ -52,7 +52,7 @@ export function Header() {
           </div>
 
           <div className="header__middle-buttons">
-            <NavLink to="/favorites" className="header__middle-fav">
+            <NavLink to="/wishlist" className="header__middle-fav">
               <img src={FavoritesIcon} />
             </NavLink>
 
