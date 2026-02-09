@@ -98,13 +98,18 @@
 
     &-quantity {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 100%;
+      width: 18px;
+      height: 18px;
       background-color: $hard-primary;
       color: $white;
       font-size: $body-xs;
       border: 1px solid $white;
       text-align: center;
-      padding: 0.5px 6px;
+      // padding: 0.5px 6px;
       top: -4px;
       right: -3px;
     }

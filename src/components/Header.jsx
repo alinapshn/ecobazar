@@ -1,4 +1,6 @@
 import { NavLink } from "react-router";
+import { useCart } from "../context/CartContext";
+import { formatCurrency } from "../utils/money";
 import LogoIcon from "../assets/img/icons/logo.svg";
 import SearchIcon from "../assets/img/icons/search.svg";
 import FavoritesIcon from "../assets/img/icons/favorites.svg";
@@ -8,6 +10,15 @@ import PhoneIcon from "../assets/img/icons/phone.svg";
 import "./header.scss";
 
 export function Header() {
+  const { cart } = useCart();
+
+  const cartCount = cart.length;
+
+  const cartTotalCents = cart.reduce((total, item) => {
+    const price = item.discountPriceCents || item.priceCents;
+    return total + price * item.quantity;
+  }, 0);
+
   return (
     <header className="header">
       <div className="header__top">
@@ -59,12 +70,14 @@ export function Header() {
             <NavLink to="/cart" className="header__cart">
               <div className="header__cart-icon">
                 <img src={CartIcon} />
-                <div className="header__cart-quantity">2</div>
+                {cartCount > 0 && (
+                  <div className="header__cart-quantity">{cartCount}</div>
+                )}
               </div>
 
               <div className="header__cart-text">
                 <p>Shopping cart:</p>
-                <p>$57.00</p>
+                <p>{formatCurrency(cartTotalCents)}</p>
               </div>
             </NavLink>
           </div>
