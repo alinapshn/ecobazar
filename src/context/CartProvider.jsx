@@ -11,19 +11,19 @@ export function CartProvider({ children }) {
     localStorage.setItem("cartItem", JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (product) => {
+  const addToCart = (product, amount = 1) => {
     setCart((prevCart) => {
       const isExist = prevCart.find((item) => item.id === product.id);
 
       if (isExist) {
         return prevCart.map((item) =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: item.quantity + amount }
             : item,
         );
       }
 
-      return [...prevCart, { ...product, quantity: 1 }];
+      return [...prevCart, { ...product, quantity: amount }];
     });
   };
 

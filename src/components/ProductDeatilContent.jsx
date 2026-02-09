@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Socials } from "./Socials";
 import { calcDiscount } from "../utils/discount";
 import { useCart } from "../context/CartContext";
 import { formatCurrency } from "../utils/money";
+import { QuantityPicker } from "./QuantityPicker";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import BrandIcon from "../assets/img/icons/brand.svg";
-import MinusIcon from "../assets/img/icons/minus.svg";
-import PlusIcon from "../assets/img/icons/plus.svg";
 import WhiteCartIcon from "../assets/img/icons/cart-white.svg";
 import GreenFavoriteIcon from "../assets/img/icons/favorites-green.svg";
 import ExitIcon from "../assets/img/icons/exit.svg";
@@ -16,6 +16,12 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
   const productPath = `/product/${product.id}`;
 
   const { addToCart } = useCart();
+
+  const [localQuantity, setLocalQuantity] = useState(1);
+
+  const handleIncrease = () => setLocalQuantity((prev) => prev + 1);
+  const handleDecrease = () =>
+    setLocalQuantity((prev) => Math.max(1, prev - 1));
 
   return (
     <div
@@ -101,18 +107,17 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
           </p>
         </div>
         <div className="product-view__buttons">
-          <div className="product-view__buttons-count">
-            <button>
-              <img src={MinusIcon} />
-            </button>
-            <p>5</p>
-            <button>
-              <img src={PlusIcon} />
-            </button>
-          </div>
-          <button className="product-view__buttons-cart button">
-            Add to Cart{" "}
-            <img src={WhiteCartIcon} onClick={() => addToCart(product)} />
+          <QuantityPicker
+            quantity={localQuantity}
+            onIncrease={handleIncrease}
+            onDecrease={handleDecrease}
+            onChange={(val) => setLocalQuantity(Number(val))}
+          />
+          <button
+            className="product-view__buttons-cart button"
+            onClick={() => addToCart(product, localQuantity)}
+          >
+            Add to Cart <img src={WhiteCartIcon} />
           </button>
           <button className="product-view__buttons-favorite">
             <img src={GreenFavoriteIcon} />

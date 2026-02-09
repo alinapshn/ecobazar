@@ -14,9 +14,9 @@ import "./App.scss";
 
 function App() {
   return (
-    <ModalProvider>
+    <CartProvider>
       <WishlistProvider>
-        <CartProvider>
+        <ModalProvider>
           <Header />
           <main>
             <Routes>
@@ -29,9 +29,9 @@ function App() {
           </main>
           <Subscribe />
           <Footer />
-        </CartProvider>
+        </ModalProvider>
       </WishlistProvider>
-    </ModalProvider>
+    </CartProvider>
   );
 }
 
