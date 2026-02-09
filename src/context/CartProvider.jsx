@@ -25,8 +25,6 @@ export function CartProvider({ children }) {
 
       return [...prevCart, { ...product, quantity: 1 }];
     });
-
-    console.log("yass", product);
   };
 
   return (
