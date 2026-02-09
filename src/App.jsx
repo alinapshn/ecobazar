@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import { ModalProvider } from "./context/ModalProvider";
 import { WishlistProvider } from "./context/WishlistProvider";
+import { CartProvider } from "./context/CartProvider";
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/home/HomePage";
 import { ProductPage } from "./pages/single-product-page/ProductPage";
@@ -15,18 +16,20 @@ function App() {
   return (
     <ModalProvider>
       <WishlistProvider>
-        <Header />
-        <main>
-          <Routes>
-            <Route index element={<HomePage />} />
-            <Route path="product/:productId" element={<ProductPage />} />
-            <Route path="shop" element={<ShopPage />} />
-            <Route path="wishlist" element={<WishlistPage />} />
-            <Route path="cart" element={<CartPage />} />
-          </Routes>
-        </main>
-        <Subscribe />
-        <Footer />
+        <CartProvider>
+          <Header />
+          <main>
+            <Routes>
+              <Route index element={<HomePage />} />
+              <Route path="product/:productId" element={<ProductPage />} />
+              <Route path="shop" element={<ShopPage />} />
+              <Route path="wishlist" element={<WishlistPage />} />
+              <Route path="cart" element={<CartPage />} />
+            </Routes>
+          </main>
+          <Subscribe />
+          <Footer />
+        </CartProvider>
       </WishlistProvider>
     </ModalProvider>
   );

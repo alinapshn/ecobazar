@@ -21,8 +21,6 @@ export function WishlistProvider({ children }) {
         return [...prevWishlist, product];
       }
     });
-
-    console.log("yass", product);
   };
 
   return (
