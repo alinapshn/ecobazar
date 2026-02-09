@@ -51,6 +51,18 @@ export function CartProvider({ children }) {
     setCart((prevCart) => prevCart.filter((item) => item.id !== product.id));
   };
 
+  const updateQuantity = (product, newQuantity) => {
+    const quantity = parseInt(newQuantity);
+
+    if (!isNaN(quantity) && quantity > 0) {
+      setCart((prevCart) =>
+        prevCart.map((item) =>
+          item.id === product.id ? { ...item, quantity } : item,
+        ),
+      );
+    }
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -59,6 +71,7 @@ export function CartProvider({ children }) {
         increaseQuantity,
         decreaseQuantity,
         removeFromCart,
+        updateQuantity,
       }}
     >
       {children}

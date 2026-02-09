@@ -1,15 +1,19 @@
 import { formatCurrency } from "../../utils/money";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
-import MinusIcon from "../../assets/img/icons/minus.svg";
-import PlusIcon from "../../assets/img/icons/plus.svg";
+import { QuantityPicker } from "../../components/QuantityPicker";
 import CloseIcon from "../../assets/img/icons/close.svg";
 import ArrowWhiteIcon from "../../assets/img/icons/arrow-right-white.svg";
 import "./cartPage.scss";
 
 export function CartPage() {
-  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } =
-    useCart();
+  const {
+    cart,
+    increaseQuantity,
+    decreaseQuantity,
+    removeFromCart,
+    updateQuantity,
+  } = useCart();
 
   const subtotalCents = cart.reduce((total, item) => {
     const currentPrice = item.discountPriceCents || item.priceCents;
@@ -56,23 +60,12 @@ export function CartPage() {
                         )}
                       </div>
 
-                      <div className="cart__item-quantity">
-                        <button
-                          onClick={() => {
-                            decreaseQuantity(product);
-                          }}
-                        >
-                          <img src={MinusIcon} />
-                        </button>
-                        <p>{product.quantity}</p>
-                        <button
-                          onClick={() => {
-                            increaseQuantity(product);
-                          }}
-                        >
-                          <img src={PlusIcon} />
-                        </button>
-                      </div>
+                      <QuantityPicker
+                        quantity={product.quantity}
+                        onIncrease={() => increaseQuantity(product)}
+                        onDecrease={() => decreaseQuantity(product)}
+                        onChange={(val) => updateQuantity(product, val)}
+                      />
 
                       <div className="cart__item-subtotal">
                         {!product.discountPriceCents
