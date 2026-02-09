@@ -8,7 +8,17 @@ import ArrowWhiteIcon from "../../assets/img/icons/arrow-right-white.svg";
 import "./cartPage.scss";
 
 export function CartPage() {
-  const { cart } = useCart();
+  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } =
+    useCart();
+
+  const subtotalCents = cart.reduce((total, item) => {
+    const currentPrice = item.discountPriceCents || item.priceCents;
+    return total + currentPrice * item.quantity;
+  }, 0);
+
+  const shippingCents = 0;
+
+  const totalCents = subtotalCents + shippingCents;
 
   return (
     <section className="cart">
@@ -47,11 +57,19 @@ export function CartPage() {
                       </div>
 
                       <div className="cart__item-quantity">
-                        <button>
+                        <button
+                          onClick={() => {
+                            decreaseQuantity(product);
+                          }}
+                        >
                           <img src={MinusIcon} />
                         </button>
                         <p>{product.quantity}</p>
-                        <button>
+                        <button
+                          onClick={() => {
+                            increaseQuantity(product);
+                          }}
+                        >
                           <img src={PlusIcon} />
                         </button>
                       </div>
@@ -66,7 +84,12 @@ export function CartPage() {
                             )}
                       </div>
 
-                      <button className="cart__item-remove">
+                      <button
+                        className="cart__item-remove"
+                        onClick={() => {
+                          removeFromCart(product);
+                        }}
+                      >
                         <img src={CloseIcon} alt="remove" />
                       </button>
                     </div>
@@ -82,7 +105,7 @@ export function CartPage() {
                 <div className="cart__total-content">
                   <p>
                     Subtotal:
-                    <span>$84.00</span>
+                    <span>{formatCurrency(subtotalCents)}</span>
                   </p>
                   <p>
                     Shipping:
@@ -90,7 +113,7 @@ export function CartPage() {
                   </p>
                   <p>
                     Total:
-                    <span>$84.00</span>
+                    <span>{formatCurrency(totalCents)}</span>
                   </p>
                 </div>
                 <button className="button cart__total-button">
