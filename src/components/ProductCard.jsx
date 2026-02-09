@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { calcDiscount } from "../utils/discount.js";
 import { formatCurrency } from "../utils/money.js";
 import { useModal } from "../context/ModalContext";
+import { useWishlist } from "../context/WishlistContext.js";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import CartIcon from "../assets/img/icons/cart.svg";
 import QuickViewIcon from "../assets/img/icons/quick-view.svg";
@@ -12,13 +13,19 @@ export function ProductCard({ product, variant }) {
   const { openModal } = useModal();
   const productPatch = `/product/${product.id}`;
 
+  const { wishlist, handleToggleWishlist } = useWishlist();
+  const isFavorite = wishlist?.some((item) => item.id === product.id);
+
   return (
     <div className={`product-card product-card--${variant}`}>
       <div
         className={`product-card__actions product-card__actions--${variant}`}
       >
         <button
-          className={`product-card__actions-button product-card__actions-button--${variant}`}
+          className={`product-card__actions-button product-card__actions-button--${variant} ${isFavorite ? "active" : ""}`}
+          onClick={() => {
+            handleToggleWishlist(product);
+          }}
         >
           <img src={FavoritesIcon} />
         </button>
