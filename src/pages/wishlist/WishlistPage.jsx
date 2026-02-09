@@ -1,6 +1,7 @@
 import { formatCurrency } from "../../utils/money";
 import { products } from "../../../data/products";
-import CloseIcon from "../../assets/img/icons/close.svg"
+import { Socials } from "../../components/Socials";
+import CloseIcon from "../../assets/img/icons/close.svg";
 import "./wishlistPage.scss";
 
 export function WishlistPage() {
@@ -48,7 +49,9 @@ export function WishlistPage() {
                   )}
 
                   <div className="wishlist__item-actions">
-                    <button className="wishlist__item-btn button">Add to Cart</button>
+                    <button className="wishlist__item-btn button">
+                      Add to Cart
+                    </button>
                     <button className="remove-btn">
                       <img src={CloseIcon} alt="remove" />
                     </button>
@@ -56,7 +59,9 @@ export function WishlistPage() {
                 </div>
               ))}
             </div>
-            <div className="wishlist__grid-socials"></div>
+            <div className="wishlist__grid-socials">
+              <Socials />
+            </div>
           </div>
         </div>
       </div>

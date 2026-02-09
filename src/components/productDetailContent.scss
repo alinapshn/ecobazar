@@ -116,35 +116,6 @@
       align-items: center;
     }
 
-    &-socials {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    &-social {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-
-      button {
-        padding: 11px;
-        border-radius: 100%;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:hover {
-          background: $primary;
-
-          img {
-            filter: invert(1);
-          }
-        }
-      }
-    }
-
     &-text {
       font-weight: 400;
       font-size: $body-s;

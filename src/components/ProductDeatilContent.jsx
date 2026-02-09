@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
+import { Socials } from "./Socials";
 import { calcDiscount } from "../utils/discount";
 import { formatCurrency } from "../utils/money";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import BrandIcon from "../assets/img/icons/brand.svg";
-import FacebookIcon from "../assets/img/icons/facebook.svg";
-import TwitterIcon from "../assets/img/icons/twitter.svg";
-import PinterestIcon from "../assets/img/icons/pinterest.svg";
-import InstagramIcon from "../assets/img/icons/instagram.svg";
 import MinusIcon from "../assets/img/icons/minus.svg";
 import PlusIcon from "../assets/img/icons/plus.svg";
 import WhiteCartIcon from "../assets/img/icons/cart-white.svg";
@@ -90,23 +87,8 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
               <p>Brand:</p>
               <img src={BrandIcon} />
             </div>
-            <div className="product-view__info-socials">
-              <p>Share item: </p>
-              <div className="product-view__info-social">
-                <button>
-                  <img src={FacebookIcon} />
-                </button>
-                <button>
-                  <img src={TwitterIcon} />
-                </button>
-                <button>
-                  <img src={PinterestIcon} />
-                </button>
-                <button>
-                  <img src={InstagramIcon} />
-                </button>
-              </div>
-            </div>
+
+            <Socials/>
           </div>
           <p className="product-view__info-text">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra,
