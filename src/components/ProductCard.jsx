@@ -3,6 +3,7 @@ import { calcDiscount } from "../utils/discount.js";
 import { formatCurrency } from "../utils/money.js";
 import { useModal } from "../context/ModalContext";
 import { useWishlist } from "../context/WishlistContext.js";
+import { useCart } from "../context/CartContext.js";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import CartIcon from "../assets/img/icons/cart.svg";
 import QuickViewIcon from "../assets/img/icons/quick-view.svg";
@@ -15,6 +16,8 @@ export function ProductCard({ product, variant }) {
 
   const { wishlist, handleToggleWishlist } = useWishlist();
   const isFavorite = wishlist?.some((item) => item.id === product.id);
+
+  const { addToCart } = useCart();
 
   return (
     <div className={`product-card product-card--${variant}`}>
@@ -87,6 +90,9 @@ export function ProductCard({ product, variant }) {
         </div>
         <button
           className={`product-card__info-cart product-card__info-cart--${variant}`}
+          onClick={() => {
+            addToCart(product);
+          }}
         >
           <img src={CartIcon} />
         </button>

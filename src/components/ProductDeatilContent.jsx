@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Socials } from "./Socials";
 import { calcDiscount } from "../utils/discount";
+import { useCart } from "../context/CartContext";
 import { formatCurrency } from "../utils/money";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import BrandIcon from "../assets/img/icons/brand.svg";
@@ -13,6 +14,9 @@ import "./productDetailContent.scss";
 
 export function ProductDetailContent({ product, onClose, isModal = false }) {
   const productPath = `/product/${product.id}`;
+
+  const { addToCart } = useCart();
+
   return (
     <div
       className={`product-view__wrapper ${isModal ? "product-view--view" : ""}`}
@@ -88,7 +92,7 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
               <img src={BrandIcon} />
             </div>
 
-            <Socials/>
+            <Socials />
           </div>
           <p className="product-view__info-text">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra,
@@ -107,7 +111,8 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
             </button>
           </div>
           <button className="product-view__buttons-cart button">
-            Add to Cart <img src={WhiteCartIcon} />
+            Add to Cart{" "}
+            <img src={WhiteCartIcon} onClick={() => addToCart(product)} />
           </button>
           <button className="product-view__buttons-favorite">
             <img src={GreenFavoriteIcon} />
