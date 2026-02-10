@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Insta1Icon from "../assets/img/footer/insta-1.jpg";
 import Insta2Icon from "../assets/img/footer/insta-2.jpg";
 import Insta3Icon from "../assets/img/footer/insta-3.jpg";
@@ -30,8 +31,12 @@ export function Footer() {
             <ul className="footer__top-list">
               <li className="footer__top-item">My Account</li>
               <li className="footer__top-item">Order History</li>
-              <li className="footer__top-item">Shoping Cart</li>
-              <li className="footer__top-item">Wishlist</li>
+              <Link to="/cart">
+                <li className="footer__top-item">Shoping Cart</li>
+              </Link>
+              <Link to="/wishlist">
+                <li className="footer__top-item">Wishlist</li>
+              </Link>
               <li className="footer__top-item">Settings</li>
             </ul>
           </div>
@@ -48,7 +53,9 @@ export function Footer() {
             <p className="footer__top-heading">Proxy</p>
             <ul className="footer__top-list">
               <li className="footer__top-item">About</li>
-              <li className="footer__top-item">Shop</li>
+              <Link to="/shop">
+                <li className="footer__top-item">Shop</li>
+              </Link>
               <li className="footer__top-item">Product</li>
               <li className="footer__top-item">Products Details</li>
               <li className="footer__top-item">Track Order</li>
@@ -57,14 +64,14 @@ export function Footer() {
           <div className="footer__top-insta">
             <p className="footer__top-heading">Instagram</p>
             <div className="footer__top-grid">
-               <img src={Insta1Icon} alt="Insta" />
-               <img src={Insta2Icon} alt="Insta" />
-               <img src={Insta3Icon} alt="Insta" />
-               <img src={Insta4Icon} alt="Insta" />
-               <img src={Insta5Icon} alt="Insta" />
-               <img src={Insta6Icon} alt="Insta" />
-               <img src={Insta7Icon} alt="Insta" />
-               <img src={Insta8Icon} alt="Insta" />
+              <img src={Insta1Icon} alt="Insta" />
+              <img src={Insta2Icon} alt="Insta" />
+              <img src={Insta3Icon} alt="Insta" />
+              <img src={Insta4Icon} alt="Insta" />
+              <img src={Insta5Icon} alt="Insta" />
+              <img src={Insta6Icon} alt="Insta" />
+              <img src={Insta7Icon} alt="Insta" />
+              <img src={Insta8Icon} alt="Insta" />
             </div>
           </div>
         </div>
