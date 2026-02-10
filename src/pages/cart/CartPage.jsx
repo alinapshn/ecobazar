@@ -2,7 +2,7 @@ import { formatCurrency } from "../../utils/money";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { QuantityPicker } from "../../components/QuantityPicker";
-import CloseIcon from "../../assets/img/icons/close.svg";
+import CloseIcon from "../../assets/img/icons/close-circle.svg";
 import ArrowWhiteIcon from "../../assets/img/icons/arrow-right-white.svg";
 import "./cartPage.scss";
 

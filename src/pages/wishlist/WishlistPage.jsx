@@ -3,7 +3,7 @@ import { formatCurrency } from "../../utils/money";
 import { useWishlist } from "../../context/WishlistContext";
 import { useCart } from "../../context/CartContext";
 import { Socials } from "../../components/Socials";
-import CloseIcon from "../../assets/img/icons/close.svg";
+import CloseIcon from "../../assets/img/icons/close-circle.svg";
 import ArrowWhiteIcon from "../../assets/img/icons/arrow-right-white.svg";
 import "./wishlistPage.scss";
 
