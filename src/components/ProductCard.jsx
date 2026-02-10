@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { calcDiscount } from "../utils/discount.js";
 import { formatCurrency } from "../utils/money.js";
 import { useModal } from "../context/ModalContext";
@@ -6,6 +7,7 @@ import { useWishlist } from "../context/WishlistContext.js";
 import { useCart } from "../context/CartContext.js";
 import RatingIcon from "../assets/img/icons/rating.svg";
 import CartIcon from "../assets/img/icons/cart.svg";
+import CheckIcon from "../assets/img/icons/check.svg";
 import QuickViewIcon from "../assets/img/icons/quick-view.svg";
 import FavoritesIcon from "../assets/img/icons/favorites.svg";
 import "./productCard.scss";
@@ -18,6 +20,25 @@ export function ProductCard({ product, variant }) {
   const isFavorite = wishlist?.some((item) => item.id === product.id);
 
   const { addToCart } = useCart();
+
+  const [isAdded, setIsAdded] = useState(false);
+
+  useEffect(() => {
+    let timer;
+    if (isAdded) {
+      timer = setTimeout(() => {
+        setIsAdded(false);
+      }, 2000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isAdded]);
+
+  const handleAddToCartClick = (e) => {
+    e.preventDefault();
+    addToCart(product);
+    setIsAdded(true);
+  };
 
   return (
     <div className={`product-card product-card--${variant}`}>
@@ -90,11 +111,14 @@ export function ProductCard({ product, variant }) {
         </div>
         <button
           className={`product-card__info-cart product-card__info-cart--${variant}`}
-          onClick={() => {
-            addToCart(product);
-          }}
+          onClick={handleAddToCartClick}
+          disabled={!product.inStock || isAdded}
         >
-          <img src={CartIcon} />
+          {isAdded ? (
+            <img src={CheckIcon} alt="Added" className="icon-checkmark" />
+          ) : (
+            <img src={CartIcon} alt="Add to cart" />
+          )}
         </button>
       </div>
     </div>

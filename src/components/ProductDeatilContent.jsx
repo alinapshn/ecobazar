@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Socials } from "./Socials";
 import { calcDiscount } from "../utils/discount";
 import { useCart } from "../context/CartContext";
@@ -10,6 +10,7 @@ import BrandIcon from "../assets/img/icons/brand.svg";
 import WhiteCartIcon from "../assets/img/icons/cart-white.svg";
 import GreenFavoriteIcon from "../assets/img/icons/favorites-green.svg";
 import ExitIcon from "../assets/img/icons/exit.svg";
+import CheckWhiteIcon from "../assets/img/icons/check-white.svg";
 import "./productDetailContent.scss";
 
 export function ProductDetailContent({ product, onClose, isModal = false }) {
@@ -22,6 +23,25 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
   const handleIncrease = () => setLocalQuantity((prev) => prev + 1);
   const handleDecrease = () =>
     setLocalQuantity((prev) => Math.max(1, prev - 1));
+
+  const [isAdded, setIsAdded] = useState(false);
+
+  useEffect(() => {
+    let timer;
+    if (isAdded) {
+      timer = setTimeout(() => {
+        setIsAdded(false);
+      }, 2000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isAdded]);
+
+  const handleAddToCartClick = (e) => {
+    e.preventDefault();
+    addToCart(product, localQuantity);
+    setIsAdded(true);
+  };
 
   return (
     <div
@@ -113,12 +133,22 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
             onDecrease={handleDecrease}
             onChange={(val) => setLocalQuantity(Number(val))}
           />
+
           <button
             className="product-view__buttons-cart button"
-            onClick={() => addToCart(product, localQuantity)}
+            onClick={handleAddToCartClick}
           >
-            Add to Cart <img src={WhiteCartIcon} />
+            {isAdded ? (
+              <>
+                Added to Cart <img src={CheckWhiteIcon} />
+              </>
+            ) : (
+              <>
+                Add to Cart <img src={WhiteCartIcon} />
+              </>
+            )}
           </button>
+
           <button className="product-view__buttons-favorite">
             <img src={GreenFavoriteIcon} />
           </button>
