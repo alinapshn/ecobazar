@@ -89,7 +89,10 @@ export function CartPage() {
                   ))}
                 </div>
                 <div className="cart__grid-buttons">
-                  <button className="button">Return to shop</button>
+                  <Link to={"/shop"}>
+                    <button className="button">Return to shop</button>
+                  </Link>
+
                   <button className="button">Update cart</button>
                 </div>
               </div>
@@ -123,7 +126,10 @@ export function CartPage() {
             </div>
           ) : (
             <div className="cart__content--empty">
-              <p>Your wishlist is empty. Start shopping to add favorites!</p>
+              <p>
+                Your cart is waiting for its first purchase. Explore our fresh
+                catalog.
+              </p>
               <Link to={"/shop"}>
                 <button className="button">
                   Shop Now

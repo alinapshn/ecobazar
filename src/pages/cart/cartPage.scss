@@ -12,6 +12,29 @@
     grid-template-columns: 1fr 424px;
     align-items: start;
     gap: 24px;
+
+    &--empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &:hover {
+          img {
+            transform: translateX(4px);
+          }
+        }
+
+        img {
+          transition: all 0.3s ease;
+        }
+      }
+    }
   }
 
   &__grid {
