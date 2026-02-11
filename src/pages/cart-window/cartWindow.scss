@@ -1,0 +1,141 @@
+.cart-window {
+  width: 100%;
+  max-width: 456px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s ease;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__wrapper {
+    padding: 40px;
+    height: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    p {
+      font-weight: 500;
+      font-size: $body-xl;
+      line-height: 150%;
+      color: $gray-9;
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-1;
+    }
+
+    &-image {
+      width: 100%;
+      max-width: 120px;
+      max-height: 100px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      width: 100%;
+      max-width: 206px;
+    }
+
+    &-name {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-9;
+    }
+
+    &-quantity {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-5;
+
+      span {
+        font-weight: 600;
+        line-height: 120%;
+        color: $gray-9;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    &-info {
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-weight: 400;
+        font-size: $body-m;
+        line-height: 150%;
+        color: $gray-9;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: $body-m;
+        line-height: 120%;
+        color: $gray-9;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
