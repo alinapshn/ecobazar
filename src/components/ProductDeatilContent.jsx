@@ -134,20 +134,30 @@ export function ProductDetailContent({ product, onClose, isModal = false }) {
             onChange={(val) => setLocalQuantity(Number(val))}
           />
 
-          <button
-            className="product-view__buttons-cart button"
-            onClick={handleAddToCartClick}
-          >
-            {isAdded ? (
-              <>
-                Added to Cart <img src={CheckWhiteIcon} />
-              </>
-            ) : (
-              <>
-                Add to Cart <img src={WhiteCartIcon} />
-              </>
-            )}
-          </button>
+          {product.inStock ? (
+            <button
+              className="product-view__buttons-cart button"
+              onClick={handleAddToCartClick}
+            >
+              {isAdded ? (
+                <>
+                  Added to Cart <img src={CheckWhiteIcon} />
+                </>
+              ) : (
+                <>
+                  Add to Cart <img src={WhiteCartIcon} />
+                </>
+              )}
+            </button>
+          ) : (
+            <button
+              className="product-view__buttons-cart button button--disabled"
+              onClick={handleAddToCartClick}
+              disabled
+            >
+              Add to Cart
+            </button>
+          )}
 
           <button className="product-view__buttons-favorite">
             <img src={GreenFavoriteIcon} />

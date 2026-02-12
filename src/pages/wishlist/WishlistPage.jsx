@@ -58,14 +58,27 @@ export function WishlistPage() {
                     )}
 
                     <div className="wishlist__item-actions">
-                      <button
-                        className="wishlist__item-btn button"
-                        onClick={() => {
-                          addToCart(product);
-                        }}
-                      >
-                        Add to Cart
-                      </button>
+                      {product.inStock ? (
+                        <button
+                          className="wishlist__item-btn button"
+                          onClick={() => {
+                            addToCart(product);
+                          }}
+                        >
+                          Add to Cart
+                        </button>
+                      ) : (
+                        <button
+                          className="wishlist__item-btn button button--disabled"
+                          onClick={() => {
+                            addToCart(product);
+                          }}
+                          disabled
+                        >
+                          Add to Cart
+                        </button>
+                      )}
+
                       <button className="remove-btn">
                         <img
                           src={CloseIcon}

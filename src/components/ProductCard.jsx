@@ -60,6 +60,7 @@ export function ProductCard({ product, variant }) {
           <img src={QuickViewIcon} />
         </button>
       </div>
+
       {!product.inStock ? (
         <p
           className={`product-card__status product-card__status--stock product-card__status--${variant}`}
@@ -109,17 +110,32 @@ export function ProductCard({ product, variant }) {
             src={RatingIcon}
           />
         </div>
-        <button
-          className={`product-card__info-cart product-card__info-cart--${variant}`}
-          onClick={handleAddToCartClick}
-          disabled={!product.inStock || isAdded}
-        >
-          {isAdded ? (
-            <img src={CheckIcon} alt="Added" className="icon-checkmark" />
-          ) : (
-            <img src={CartIcon} alt="Add to cart" />
-          )}
-        </button>
+
+        {product.inStock ? (
+          <button
+            className={`product-card__info-cart product-card__info-cart--${variant}`}
+            onClick={handleAddToCartClick}
+            disabled={!product.inStock || isAdded}
+          >
+            {isAdded ? (
+              <img src={CheckIcon} alt="Added" className="icon-checkmark" />
+            ) : (
+              <img src={CartIcon} alt="Add to cart" />
+            )}
+          </button>
+        ) : (
+          <button
+            className={`product-card__info-cart product-card__info-cart--${variant} product-card__info-cart--disabled`}
+            onClick={handleAddToCartClick}
+            disabled
+          >
+            {isAdded ? (
+              <img src={CheckIcon} alt="Added" className="icon-checkmark" />
+            ) : (
+              <img src={CartIcon} alt="Add to cart" />
+            )}
+          </button>
+        )}
       </div>
     </div>
   );

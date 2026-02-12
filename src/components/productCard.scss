@@ -24,6 +24,14 @@
       img {
         filter: invert(1);
       }
+
+      &--disabled {
+        background-color: $gray-1;
+
+        img {
+          filter: none;
+        }
+      }
     }
 
     .product-card__actions {
@@ -234,6 +242,10 @@
         height: 40px;
         width: 40px;
         padding: 10px;
+      }
+
+      &--disabled {
+        background: $gray-0-5;
       }
     }
   }

@@ -78,9 +78,25 @@ a {
     background: $hard-primary;
   }
 
-  &:active{
+  &:active {
     background: $white;
     color: $hard-primary;
     outline: 2px solid $hard-primary;
+  }
+
+  &--disabled {
+    background: $gray-0-5;
+    color: $gray-3;
+
+    img{
+      filter: invert(1);
+    }
+
+    &:hover,
+    &:active {
+      background: $gray-1;
+      color: $gray-4;
+      outline: none;
+    }
   }
 }
