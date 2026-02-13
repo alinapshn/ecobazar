@@ -99,7 +99,7 @@ export function CartWindow({ isOpen, onClose }) {
               <Link to="/checkout" className="button" onClick={onClose}>
                 Checkout
               </Link>
-              <Link to="/cart" className="button" onClick={onClose}>
+              <Link to="/cart" className="button button--light-green" onClick={onClose}>
                 Go To Cart
               </Link>
             </div>

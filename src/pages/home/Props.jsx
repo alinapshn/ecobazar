@@ -25,9 +25,9 @@ export function Props() {
             <p className="props__info-subtext">
               Free shipping on all your order. we deliver, you enjoy
             </p>
-            <button className="props__info-button">
+            <button className="button props__info-button">
               Shop now
-              <img src={ArrowWhiteRightIcon} />
+              <img className="props__info-button--arrow" src={ArrowWhiteRightIcon} />
             </button>
           </div>
         </div>

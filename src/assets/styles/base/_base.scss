@@ -71,6 +71,10 @@ a {
   line-height: 120%;
   color: $white;
   background: $primary;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -82,13 +86,17 @@ a {
     background: $white;
     color: $hard-primary;
     outline: 2px solid $hard-primary;
+
+    img {
+      filter: invert(1);
+    }
   }
 
   &--disabled {
     background: $gray-0-5;
     color: $gray-3;
 
-    img{
+    img {
       filter: invert(1);
     }
 
@@ -97,6 +105,52 @@ a {
       background: $gray-1;
       color: $gray-4;
       outline: none;
+    }
+  }
+
+  &--light-green {
+    background: rgba(86, 172, 89, 0.1);
+    color: $primary;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    &:active {
+      outline: 2px solid $primary;
+      color: $primary;
+      background: $white;
+    }
+  }
+
+  &--grey {
+    background: $gray-0-5;
+    color: $gray-7;
+
+    &:hover {
+      background: $gray-3;
+    }
+
+    &:active {
+      background: $gray-1;
+      color: $gray-7;
+      outline: 2px solid $gray-7;
+    }
+  }
+
+  &--black {
+    background: $gray-8;
+    color: $white;
+
+    &:hover {
+      background: $gray-9;
+    }
+
+    &:active {
+      background: $gray-1;
+      color: $gray-7;
+      outline: 2px solid $gray-7;
     }
   }
 }

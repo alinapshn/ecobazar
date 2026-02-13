@@ -90,10 +90,10 @@ export function CartPage() {
                 </div>
                 <div className="cart__grid-buttons">
                   <Link to={"/shop"}>
-                    <button className="button">Return to shop</button>
+                    <button className="button button--grey">Return to shop</button>
                   </Link>
 
-                  <button className="button">Update cart</button>
+                  <button className="button button--grey">Update cart</button>
                 </div>
               </div>
               <div className="cart__total">
@@ -120,7 +120,7 @@ export function CartPage() {
                 <p className="cart__coupon-heading">Coupon Code</p>
                 <div className="cart__coupon-form">
                   <input type="text" placeholder="Enter code" />
-                  <button className="button">Apply Coupon</button>
+                  <button className="button button--black">Apply Coupon</button>
                 </div>
               </div>
             </div>
