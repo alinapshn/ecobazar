@@ -1,4 +1,4 @@
-import { Routes, Route, Router } from "react-router";
+import { Routes, Route } from "react-router";
 import { ModalProvider } from "./context/ModalProvider";
 import { WishlistProvider } from "./context/WishlistProvider";
 import { CartProvider } from "./context/CartProvider";
@@ -9,6 +9,7 @@ import { ShopPage } from "./pages/shop/ShopPage";
 import { WishlistPage } from "./pages/wishlist/WishlistPage";
 import { CartPage } from "./pages/cart/CartPage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
+import { SignIn } from "./pages/sign-in/SignIn";
 import { Subscribe } from "./components/Subscribe";
 import { Footer } from "./components/Footer";
 import "./App.scss";
@@ -27,6 +28,7 @@ function App() {
               <Route path="wishlist" element={<WishlistPage />} />
               <Route path="cart" element={<CartPage />} />
               <Route path="checkout" element={<CheckoutPage />} />
+              <Route path="signIn" element={<SignIn />} />
             </Routes>
           </main>
           <Subscribe />

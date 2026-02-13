@@ -45,9 +45,10 @@ export function Header() {
                 USD <img src={ArrowDownIcon} />
               </button>
               <div className="header__user-auth">
-                <a href="#" className="header__link">
+                <NavLink to="/signIn" className="header__link">
                   Sign In /
-                </a>
+                </NavLink>
+                
                 <a href="#" className="header__link">
                   Sign Up
                 </a>
