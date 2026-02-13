@@ -11,6 +11,7 @@ import { CartPage } from "./pages/cart/CartPage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { SignIn } from "./pages/sign-in/SignIn";
 import { SignUp } from "./pages/sign-up/SignUp";
+import { NotFoundPage } from "./pages/not-found/NotFoundPage";
 import { Subscribe } from "./components/Subscribe";
 import { Footer } from "./components/Footer";
 import "./App.scss";
@@ -31,6 +32,7 @@ function App() {
               <Route path="checkout" element={<CheckoutPage />} />
               <Route path="signIn" element={<SignIn />} />
               <Route path="signUp" element={<SignUp />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
           <Subscribe />
