@@ -10,6 +10,7 @@ import { WishlistPage } from "./pages/wishlist/WishlistPage";
 import { CartPage } from "./pages/cart/CartPage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { SignIn } from "./pages/sign-in/SignIn";
+import { SignUp } from "./pages/sign-up/SignUp";
 import { Subscribe } from "./components/Subscribe";
 import { Footer } from "./components/Footer";
 import "./App.scss";
@@ -29,6 +30,7 @@ function App() {
               <Route path="cart" element={<CartPage />} />
               <Route path="checkout" element={<CheckoutPage />} />
               <Route path="signIn" element={<SignIn />} />
+              <Route path="signUp" element={<SignUp />} />
             </Routes>
           </main>
           <Subscribe />

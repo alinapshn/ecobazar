@@ -37,7 +37,7 @@ export function SignIn() {
           <button className="button">Login</button>
 
           <p className="sign-in__additional">
-            Don’t have account? <Link>Register</Link>
+            Don’t have account? <Link to="/signUp">Register</Link>
           </p>
         </div>
       </div>

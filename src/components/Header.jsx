@@ -48,10 +48,10 @@ export function Header() {
                 <NavLink to="/signIn" className="header__link">
                   Sign In /
                 </NavLink>
-                
-                <a href="#" className="header__link">
+
+                <NavLink to="/signUp" className="header__link">
                   Sign Up
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -142,10 +142,7 @@ export function Header() {
         </div>
       </header>
 
-      <CartWindow
-        isOpen={isCartWindowOpen}
-        onClose={handleCloseCart}
-      />
+      <CartWindow isOpen={isCartWindowOpen} onClose={handleCloseCart} />
     </>
   );
 }
