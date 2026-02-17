@@ -3,6 +3,7 @@ import { Features } from "./Features";
 import { Delivery } from "./Delivery";
 import { Team } from "./Team";
 import { Clients } from "./Clients";
+import { Companies } from "./Companies";
 
 export function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export function AboutPage() {
       <Delivery />
       <Team />
       <Clients />
+      <Companies />
     </>
   );
 }

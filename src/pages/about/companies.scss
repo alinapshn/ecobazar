@@ -1,0 +1,30 @@
+.companies {
+  &__wrapper {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-right: 80px;
+      border-right: 1px solid $gray-1;
+    }
+
+    &-logo {
+      transition: all 0.3s ease;
+
+      path {
+        fill: $gray-3;
+        transition: fill 0.3s ease;
+      }
+
+      &:hover {
+        path {
+          fill: #d8259b;
+        }
+      }
+    }
+  }
+}
