@@ -1,0 +1,68 @@
+.clients {
+  background-color: $gray-0-5;
+
+  &__wrapper {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 24px;
+    background-color: $white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-quotes {
+      max-width: 32px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-7;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-customer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-name {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-weight: 500;
+        font-size: $body-m;
+        line-height: 150%;
+        color: $gray-9;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: $body-s;
+        line-height: 150%;
+        color: $gray-4;
+      }
+    }
+  }
+}
