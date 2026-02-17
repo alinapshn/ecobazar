@@ -1,0 +1,117 @@
+.contact {
+  &__wrapper {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+
+    &-block {
+      padding: 24px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        max-width: 51px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: $body-m;
+        line-height: 170%;
+        text-align: center;
+        color: $gray-8;
+        max-width: 272px;
+      }
+
+      &:last-child {
+        p {
+          max-width: 155px;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $gray-1;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 44px 50px 50px;
+    align-items: start;
+    border-radius: 8px;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+    width: 100%;
+    max-width: 984px;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &-heading {
+      font-weight: 600;
+      font-size: $body-xxl;
+      line-height: 150%;
+      color: $gray-9;
+    }
+
+    &-subheading {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-4;
+      max-width: 486px;
+    }
+
+    &-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      width: 100%;
+
+      input,
+      textarea {
+        padding: 14px 16px;
+        border: 1px solid $gray-1;
+        border-radius: 6px;
+        font-size: $body-m;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &::placeholder {
+          color: $gray-4;
+        }
+
+        &:focus {
+          border-color: $primary;
+        }
+      }
+
+      input:nth-child(3),
+      textarea {
+        grid-column: span 2;
+      }
+
+      textarea {
+        min-height: 98px; 
+        resize: none;
+      }
+    }
+  }
+}
