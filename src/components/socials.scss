@@ -3,12 +3,19 @@
   align-items: center;
   gap: 10px;
 
+  &__title {
+    font-weight: 400;
+    font-size: $body-s;
+    line-height: 150%;
+    color: $gray-9;
+  }
+
   &__buttons {
     display: flex;
     gap: 5px;
     align-items: center;
 
-    button {
+    &-button {
       padding: 11px;
       border-radius: 100%;
       transition: all 0.3s ease;
@@ -16,11 +23,37 @@
       align-items: center;
       justify-content: center;
 
+      path {
+        transition: all 0.3s ease;
+      }
+
       &:hover {
         background: $primary;
 
-        img {
-          filter: invert(1);
+        .socials__buttons-button--default,
+        .socials__buttons-button--light,
+        .socials__buttons-button--white {
+          path {
+            fill: $white;
+          }
+        }
+      }
+
+      &--default {
+        path {
+          fill: $gray-7;
+        }
+      }
+
+      &--light {
+        path {
+          fill: $green-3;
+        }
+      }
+
+      &--white {
+        path {
+          fill: $white;
         }
       }
     }

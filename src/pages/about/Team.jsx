@@ -1,7 +1,4 @@
-import FacebookIcon from "../../assets/img/about/icons/facebook.svg";
-import TwitterIcon from "../../assets/img/about/icons/twitter.svg";
-import PinterestIcon from "../../assets/img/about/icons/pinterest.svg";
-import InstagramIcon from "../../assets/img/about/icons/instagram.svg";
+import { Socials } from "../../components/Socials";
 import TeamMemberImage1 from "../../assets/img/about/team-1.png";
 import TeamMemberImage2 from "../../assets/img/about/team-2.png";
 import TeamMemberImage3 from "../../assets/img/about/team-3.png";
@@ -55,18 +52,7 @@ export function Team() {
                 <div key={member.id} className="team__item">
                   <div className="team__item-image">
                     <div className="team__item-hover">
-                      <button>
-                        <img src={FacebookIcon} />
-                      </button>
-                      <button>
-                        <img src={TwitterIcon} />
-                      </button>
-                      <button>
-                        <img src={PinterestIcon} />
-                      </button>
-                      <button>
-                        <img src={InstagramIcon} />
-                      </button>
+                      <Socials withTitle={false} variant="white" />
                     </div>
                     <img src={member.image} />
                   </div>
