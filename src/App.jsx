@@ -11,6 +11,7 @@ import { CartPage } from "./pages/cart/CartPage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { AboutPage } from "./pages/about/AboutPage";
 import { ContactPage } from "./pages/contact/ContactPage";
+import { FaqsPage } from "./pages/faqs/FaqsPage";
 import { SignIn } from "./pages/sign-in/SignIn";
 import { SignUp } from "./pages/sign-up/SignUp";
 import { NotFoundPage } from "./pages/not-found/NotFoundPage";
@@ -34,6 +35,7 @@ function App() {
               <Route path="checkout" element={<CheckoutPage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="contact" element={<ContactPage />} />
+              <Route path="faqs" element={<FaqsPage />} />
               <Route path="signIn" element={<SignIn />} />
               <Route path="signUp" element={<SignUp />} />
               <Route path="*" element={<NotFoundPage />} />
