@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Socials } from "./Socials";
 import InstaIcon1 from "../assets/img/footer/insta-1.jpg";
 import InstaIcon2 from "../assets/img/footer/insta-2.jpg";
@@ -90,41 +91,97 @@ export function Footer() {
               <p>Proxy@gmail.com</p>
             </div>
           </div>
+
           <div className="footer__top-links">
             <p className="footer__top-heading">My Account</p>
+
             <ul className="footer__top-list">
-              <li className="footer__top-item">My Account</li>
-              <li className="footer__top-item">Order History</li>
-              <Link to="/cart">
-                <li className="footer__top-item">Shoping Cart</li>
-              </Link>
-              <Link to="/wishlist">
-                <li className="footer__top-item">Wishlist</li>
-              </Link>
-              <li className="footer__top-item">Settings</li>
+              <li>
+                <NavLink to="/account" className="footer__top-item">
+                  My Account
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/order-history" className="footer__top-item">
+                  Order History
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/cart" className="footer__top-item">
+                  Shoping Cart
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/wishlist" className="footer__top-item">
+                  Wishlist
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/settings" className="footer__top-item">
+                  Settings
+                </NavLink>
+              </li>
             </ul>
           </div>
+
           <div className="footer__top-links">
             <p className="footer__top-heading">Helps</p>
+
             <ul className="footer__top-list">
-              <li className="footer__top-item">Contact</li>
-              <li className="footer__top-item">Faqs</li>
-              <li className="footer__top-item">Terms & Condition</li>
-              <li className="footer__top-item">Privacy Policy</li>
+              <li>
+                <NavLink to="/contact" className="footer__top-item">
+                  Contact
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/faqs" className="footer__top-item">
+                  Faqs
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/terms-and-condition" className="footer__top-item">
+                  Terms & Condition
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/privacy-policy" className="footer__top-item">
+                  Privacy Policy
+                </NavLink>
+              </li>
             </ul>
           </div>
+
           <div className="footer__top-links">
             <p className="footer__top-heading">Proxy</p>
+
             <ul className="footer__top-list">
-              <li className="footer__top-item">About</li>
-              <Link to="/shop">
-                <li className="footer__top-item">Shop</li>
-              </Link>
-              <li className="footer__top-item">Product</li>
-              <li className="footer__top-item">Products Details</li>
-              <li className="footer__top-item">Track Order</li>
+              <li>
+                <NavLink to="/about" className="footer__top-item">
+                  About
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/shop" className="footer__top-item">
+                  Shop
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/track-order" className="footer__top-item">
+                  Track Order
+                </NavLink>
+              </li>
             </ul>
           </div>
+
           <div className="footer__top-insta">
             <p className="footer__top-heading">Instagram</p>
 
