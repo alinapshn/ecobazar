@@ -4,13 +4,10 @@
     url("../assets/img/footer/bg-right.png") right bottom / contain no-repeat,
     $green-9;
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__top {
     padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
 
     &-about {
       display: flex;
@@ -95,6 +92,38 @@
         border-radius: 4px;
         overflow: hidden;
       }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid $green-8;
+
+    &-text {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $green-5;
+    }
+
+    &-payments {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    &-item {
+      width: 45px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $green-8;
+      border-radius: 5px;
     }
   }
 }

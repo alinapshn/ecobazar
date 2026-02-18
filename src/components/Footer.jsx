@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Socials } from "./Socials";
 import Insta1Icon from "../assets/img/footer/insta-1.jpg";
 import Insta2Icon from "../assets/img/footer/insta-2.jpg";
 import Insta3Icon from "../assets/img/footer/insta-3.jpg";
@@ -7,13 +8,41 @@ import Insta5Icon from "../assets/img/footer/insta-5.jpg";
 import Insta6Icon from "../assets/img/footer/insta-6.jpg";
 import Insta7Icon from "../assets/img/footer/insta-7.jpg";
 import Insta8Icon from "../assets/img/footer/insta-8.jpg";
+import PaymentIcon1 from "../assets/img/footer/icons/apple-pay.svg";
+import PaymentIcon2 from "../assets/img/footer/icons/visa-logo.svg";
+import PaymentIcon3 from "../assets/img/footer/icons/discover.svg";
+import PaymentIcon4 from "../assets/img/footer/icons/mastercard.svg";
+import PaymentIcon5 from "../assets/img/footer/icons/secure-payment.svg";
 import "./footer.scss";
 
 export function Footer() {
+  const paymentList = [
+    {
+      id: 1,
+      image: PaymentIcon1,
+    },
+    {
+      id: 2,
+      image: PaymentIcon2,
+    },
+    {
+      id: 3,
+      image: PaymentIcon3,
+    },
+    {
+      id: 4,
+      image: PaymentIcon4,
+    },
+    {
+      id: 5,
+      image: PaymentIcon5,
+    },
+  ];
+
   return (
     <footer className="footer">
-      <div className="footer__top">
-        <div className="footer__wrapper container">
+      <div className="container">
+        <div className="footer__top">
           <div className="footer__top-about">
             <p className="footer__top-heading">About Shopery</p>
             <p className="footer__top-text">
@@ -75,9 +104,22 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="footer__bottom">
-        <div className="container"></div>
+
+        <div className="footer__bottom">
+          <Socials withTitle={false} variant="light" />
+
+          <p className="footer__bottom-text">
+            Shopery eCommerce © 2021. All Rights Reserved
+          </p>
+
+          <div className="footer__bottom-payments">
+            {paymentList.map((item) => (
+              <div key={item.id} className="footer__bottom-item">
+                <img src={item.image} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );
