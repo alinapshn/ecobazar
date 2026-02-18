@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { Socials } from "./Socials";
-import Insta1Icon from "../assets/img/footer/insta-1.jpg";
-import Insta2Icon from "../assets/img/footer/insta-2.jpg";
-import Insta3Icon from "../assets/img/footer/insta-3.jpg";
-import Insta4Icon from "../assets/img/footer/insta-4.jpg";
-import Insta5Icon from "../assets/img/footer/insta-5.jpg";
-import Insta6Icon from "../assets/img/footer/insta-6.jpg";
-import Insta7Icon from "../assets/img/footer/insta-7.jpg";
-import Insta8Icon from "../assets/img/footer/insta-8.jpg";
+import InstaIcon1 from "../assets/img/footer/insta-1.jpg";
+import InstaIcon2 from "../assets/img/footer/insta-2.jpg";
+import InstaIcon3 from "../assets/img/footer/insta-3.jpg";
+import InstaIcon4 from "../assets/img/footer/insta-4.jpg";
+import InstaIcon5 from "../assets/img/footer/insta-5.jpg";
+import InstaIcon6 from "../assets/img/footer/insta-6.jpg";
+import InstaIcon7 from "../assets/img/footer/insta-7.jpg";
+import InstaIcon8 from "../assets/img/footer/insta-8.jpg";
 import PaymentIcon1 from "../assets/img/footer/icons/apple-pay.svg";
 import PaymentIcon2 from "../assets/img/footer/icons/visa-logo.svg";
 import PaymentIcon3 from "../assets/img/footer/icons/discover.svg";
@@ -16,6 +16,41 @@ import PaymentIcon5 from "../assets/img/footer/icons/secure-payment.svg";
 import "./footer.scss";
 
 export function Footer() {
+  const instaList = [
+    {
+      id: 1,
+      image: InstaIcon1,
+    },
+    {
+      id: 2,
+      image: InstaIcon2,
+    },
+    {
+      id: 3,
+      image: InstaIcon3,
+    },
+    {
+      id: 4,
+      image: InstaIcon4,
+    },
+    {
+      id: 5,
+      image: InstaIcon5,
+    },
+    {
+      id: 6,
+      image: InstaIcon6,
+    },
+    {
+      id: 7,
+      image: InstaIcon7,
+    },
+    {
+      id: 8,
+      image: InstaIcon8,
+    },
+  ];
+
   const paymentList = [
     {
       id: 1,
@@ -92,15 +127,11 @@ export function Footer() {
           </div>
           <div className="footer__top-insta">
             <p className="footer__top-heading">Instagram</p>
+
             <div className="footer__top-grid">
-              <img src={Insta1Icon} alt="Insta" />
-              <img src={Insta2Icon} alt="Insta" />
-              <img src={Insta3Icon} alt="Insta" />
-              <img src={Insta4Icon} alt="Insta" />
-              <img src={Insta5Icon} alt="Insta" />
-              <img src={Insta6Icon} alt="Insta" />
-              <img src={Insta7Icon} alt="Insta" />
-              <img src={Insta8Icon} alt="Insta" />
+              {instaList.map((item) => (
+                <img key={item.id} src={item.image} />
+              ))}
             </div>
           </div>
         </div>
