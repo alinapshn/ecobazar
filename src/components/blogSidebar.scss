@@ -1,0 +1,157 @@
+.blog-sidebar {
+  max-width: 400px;
+
+  &__wrapper {
+    padding: 20px 0 28px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-1;
+    }
+  }
+
+  &__search {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid $gray-1;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: $body-m;
+    line-height: 130%;
+    color: $gray-4;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: $body-xl;
+    line-height: 150%;
+    color: $gray-9;
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-weight: 400;
+        font-size: $body-s;
+        line-height: 150%;
+        color: $gray-9;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: $body-s;
+        line-height: 150%;
+        color: $gray-5;
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-list {
+      display: flex;
+      gap: 8px 8px;
+    }
+
+    &-tag {
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-9;
+      background-color: $gray-0-5;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 8px;
+    }
+  }
+
+  &__recent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-image {
+      max-width: 100px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-weight: 500;
+        font-size: $body-m;
+        line-height: 150%;
+        color: $gray-9;
+      }
+
+      span {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        font-weight: 400;
+        font-size: $body-s;
+        line-height: 150%;
+        color: $gray-6;
+      }
+    }
+  }
+}
