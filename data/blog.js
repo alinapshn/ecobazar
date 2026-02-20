@@ -2,8 +2,8 @@ import blogJson from "../backend/blog.json";
 
 export const news = blogJson;
 
-export function getNewsById(id) {
-  return news.find((item) => item.id === Number(id));
+export function getNewsById(blogId) {
+  return news.find((item) => item.id === Number(blogId));
 }
 
 export function getRecentNews(limit = 3) {
