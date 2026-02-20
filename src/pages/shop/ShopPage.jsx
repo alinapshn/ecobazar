@@ -3,7 +3,7 @@ import { products } from "../../../data/products";
 import { ShopHeader } from "./ShopHeader";
 import { Filters } from "./Filters";
 import { ProductsGrid } from "./ProductsGrid";
-import { Pagination } from "./Pagination";
+import { Pagination } from "../../components/Pagination";
 import "./shopPage.scss";
 
 export function ShopPage() {
