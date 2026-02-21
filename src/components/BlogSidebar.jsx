@@ -97,6 +97,12 @@ export function BlogSidebar({
               <button
                 key={tag}
                 className={`blog-sidebar__tags-tag ${filters.tag === tag ? "active" : ""}`}
+                onClick={() =>
+                  setFilters({
+                    ...filters,
+                    tag: filters.tag === tag ? "" : tag,
+                  })
+                }
               >
                 {tag}
               </button>
