@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import SearchIcon from "../assets/img/icons/search.svg";
 import CalendarIcon from "../assets/img/blog/icons/calendar.svg";
 import GalleryImage1 from "../assets/img/blog/gallery/gallery-1.png";
@@ -11,11 +12,11 @@ import GalleryImage8 from "../assets/img/blog/gallery/gallery-8.png";
 import "./blogSidebar.scss";
 
 export function BlogSidebar({
-  categories,
-  tags,
-  filters,
+  categories = [],
+  tags = [],
+  filters = {},
   setFilters,
-  recentPosts,
+  recentPosts = [],
 }) {
   const gallery = [
     {
@@ -52,6 +53,16 @@ export function BlogSidebar({
     },
   ];
 
+  const navigate = useNavigate();
+
+  const handleAction = (type, value) => {
+    if (setFilters) {
+      setFilters({ ...filters, [type]: value });
+    } else {
+      navigate(`/blog?${type}=${value}`);
+    }
+  };
+
   return (
     <div className="blog-sidebar">
       <div className="blog-sidebar__wrapper">
@@ -62,7 +73,9 @@ export function BlogSidebar({
             type="text"
             placeholder="Search..."
             value={filters.search}
-            onChange={(e) => setFilters({ ...filters, search: e.target.value })}
+            onChange={(e) =>
+              setFilters?.({ ...filters, search: e.target.value })
+            }
           />
         </div>
       </div>
@@ -75,10 +88,8 @@ export function BlogSidebar({
             {categories.map((category) => (
               <div
                 key={category.name}
-                className={`blog-sidebar__categories-item ${filters.category === category.name ? "active" : ""}`}
-                onClick={() =>
-                  setFilters({ ...filters, category: category.name })
-                }
+                className={`blog-sidebar__categories-item ${filters?.category === category.name ? "active" : ""}`}
+                onClick={() => handleAction("category", category.name)}
               >
                 <p>{category.name}</p>
                 <span>({category.count})</span>
@@ -96,13 +107,8 @@ export function BlogSidebar({
             {tags.map((tag) => (
               <button
                 key={tag}
-                className={`blog-sidebar__tags-tag ${filters.tag === tag ? "active" : ""}`}
-                onClick={() =>
-                  setFilters({
-                    ...filters,
-                    tag: filters.tag === tag ? "" : tag,
-                  })
-                }
+                className={`blog-sidebar__tags-tag ${filters?.tag === tag ? "active" : ""}`}
+                onClick={() => handleAction("tag", tag)}
               >
                 {tag}
               </button>
