@@ -7,6 +7,7 @@ import {
 } from "../../../data/blog";
 import { BlogInfo } from "./BlogInfo";
 import { BlogSidebar } from "../../components/BlogSidebar";
+import "./singleBlogPage.scss";
 
 export function SingleBlogPage() {
   const { blogId } = useParams();
@@ -18,7 +19,9 @@ export function SingleBlogPage() {
     <section className="blog">
       <div className="container">
         <div className="blog__wrapper">
-          <BlogInfo post={post} />
+          <div className="blog__content">
+            <BlogInfo post={post} />
+          </div>
 
           <BlogSidebar
             categories={categoriesList}
