@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { products } from "../../../data/products";
-import { ShopHeader } from "./ShopHeader";
+import { FiltersHeader } from "../../components/FiltersHeader";
 import { Filters } from "./Filters";
 import { ProductsGrid } from "./ProductsGrid";
 import { Pagination } from "../../components/Pagination";
@@ -92,7 +92,7 @@ export function ShopPage() {
     <section className="shop-page">
       <div className="container">
         <div className="shop-page__wrapper">
-          <ShopHeader
+          <FiltersHeader
             count={filteredProducts.length}
             isDirty={isDirty}
             onApply={handleApply}
