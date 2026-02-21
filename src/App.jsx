@@ -9,6 +9,7 @@ import { ShopPage } from "./pages/shop/ShopPage";
 import { WishlistPage } from "./pages/wishlist/WishlistPage";
 import { CartPage } from "./pages/cart/CartPage";
 import { CheckoutPage } from "./pages/checkout/CheckoutPage";
+import { BlogsPage } from "./pages/blog/BlogsPage";
 import { SingleBlogPage } from "./pages/single-blog-page/SingleBlogPage";
 import { AboutPage } from "./pages/about/AboutPage";
 import { ContactPage } from "./pages/contact/ContactPage";
@@ -34,6 +35,7 @@ function App() {
               <Route path="wishlist" element={<WishlistPage />} />
               <Route path="cart" element={<CartPage />} />
               <Route path="checkout" element={<CheckoutPage />} />
+              <Route path="blog" element={<BlogsPage />} />
               <Route path="blog/:blogId" element={<SingleBlogPage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="contact" element={<ContactPage />} />
