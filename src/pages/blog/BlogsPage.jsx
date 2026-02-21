@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { news, getRecentNews } from "../../../data/blog";
+import { news, getRecentNews, allTags, categoriesList } from "../../../data/blog";
 import { FiltersHeader } from "../../components/FiltersHeader";
 import { BlogSidebar } from "../../components/BlogSidebar";
 import { BlogsGrid } from "./BlogsGrid";
@@ -39,18 +39,6 @@ export function BlogsPage() {
   };
 
   const recentPosts = getRecentNews(3);
-  const allTags = [...new Set(news.flatMap((item) => item.tags))];
-
-  const categoriesList = useMemo(() => {
-    const counts = news.reduce((acc, item) => {
-      acc[item.category] = (acc[item.category] || 0) + 1;
-      return acc;
-    }, {});
-    return [
-      { name: "All categories", count: news.length },
-      ...Object.entries(counts).map(([name, count]) => ({ name, count })),
-    ];
-  }, []);
 
   const filteredNews = useMemo(() => {
     return news.filter((item) => {
