@@ -5,10 +5,11 @@
     justify-content: space-between;
     gap: 48px;
   }
-
+  
   &__content {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    max-width: 872px;
   }
 }
