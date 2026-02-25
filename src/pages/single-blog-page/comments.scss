@@ -1,0 +1,119 @@
+.comments {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: $body-xxl;
+    line-height: 150%;
+    color: $gray-9;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid $gray-1;
+      border-radius: 6px;
+      padding: 14px 16px;
+      transition: all 0.3s ease;
+
+      &:focus {
+        border: 1px solid $primary;
+      }
+    }
+
+    textarea {
+      resize: none;
+      min-height: 98px;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: space-between;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 12px;
+
+    &:not(:last-child) {
+      padding-bottom: 24px;
+      border-bottom: 1px solid $gray-1;
+    }
+
+    &-image {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &-header {
+      display: flex;
+      gap: 6px;
+      font-weight: 500;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-9;
+
+      span {
+        font-weight: 400;
+        color: $gray-4;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: $body-s;
+      line-height: 150%;
+      color: $gray-6;
+    }
+  }
+}

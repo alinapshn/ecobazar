@@ -7,6 +7,7 @@ import {
 } from "../../../data/blog";
 import { BlogInfo } from "./BlogInfo";
 import { BlogSidebar } from "../../components/BlogSidebar";
+import { Comments } from "./Comments";
 import "./singleBlogPage.scss";
 
 export function SingleBlogPage() {
@@ -21,6 +22,8 @@ export function SingleBlogPage() {
         <div className="blog__wrapper">
           <div className="blog__content">
             <BlogInfo post={post} />
+
+            <Comments comments={post.comments} />
           </div>
 
           <BlogSidebar
