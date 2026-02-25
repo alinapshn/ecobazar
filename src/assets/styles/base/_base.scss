@@ -153,4 +153,14 @@ a {
       outline: 2px solid $gray-7;
     }
   }
+
+  &--green-border{
+    background: $white;
+    color: $primary;
+    outline: 2px solid $primary;
+
+    &:hover{
+      background: $white;
+    }
+  }
 }
