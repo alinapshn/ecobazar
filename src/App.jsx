@@ -32,7 +32,10 @@ function App() {
           <main>
             <Routes>
               <Route index element={<HomePage />} />
-              <Route path="product/:productId" element={<ProductPage />} />
+              <Route
+                path="/shop/:categoryName/:productId"
+                element={<ProductPage />}
+              />
               <Route path="shop" element={<ShopPage />} />
               <Route path="wishlist" element={<WishlistPage />} />
               <Route path="cart" element={<CartPage />} />

@@ -14,7 +14,7 @@ import "./productCard.scss";
 
 export function ProductCard({ product, variant }) {
   const { openModal } = useModal();
-  const productPatch = `/product/${product.id}`;
+  const productPath = `/shop/${product.category}/${product.id}`;
 
   const { wishlist, handleToggleWishlist } = useWishlist();
   const isFavorite = wishlist?.some((item) => item.id === product.id);
@@ -78,7 +78,7 @@ export function ProductCard({ product, variant }) {
         </p>
       ) : null}
 
-      <Link className="product-card__image" to={productPatch}>
+      <Link className="product-card__image" to={productPath}>
         <img src={`/${product.image}`} />
       </Link>
 
@@ -86,7 +86,7 @@ export function ProductCard({ product, variant }) {
         <div
           className={`product-card__info-text product-card__info-text--${variant}`}
         >
-          <Link to={productPatch}>
+          <Link to={productPath}>
             <p
               className={`product-card__info-name product-card__info-name--${variant}`}
             >

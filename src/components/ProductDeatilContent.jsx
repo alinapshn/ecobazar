@@ -14,7 +14,7 @@ import CheckWhiteIcon from "../assets/img/icons/check-white.svg";
 import "./productDetailContent.scss";
 
 export function ProductDetailContent({ product, onClose, isModal = false }) {
-  const productPath = `/product/${product.id}`;
+  const productPath = `/shop/${product.category}/${product.id}`;
 
   const { addToCart } = useCart();
 
