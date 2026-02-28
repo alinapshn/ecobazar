@@ -1,10 +1,8 @@
-import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { products } from "../../data/products";
 import HomeIcon from "../assets/img/breadcrumbs/home.svg";
 import ArrowIcon from "../assets/img/breadcrumbs/arrow-right.svg";
 import "./breadcrumbs.scss";
-
 
 export function Breadcrumbs() {
   const { pathname } = useLocation();
@@ -14,14 +12,11 @@ export function Breadcrumbs() {
 
   const formatName = (string) => {
     if (!string) return "";
-
     return string.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
   };
 
   const getProduct = (slug) => {
-    return products.find(
-      (p) => String(p.id) === slug || p.slug === slug
-    );
+    return products.find((p) => String(p.id) === slug || p.slug === slug);
   };
 
   return (
@@ -36,47 +31,38 @@ export function Breadcrumbs() {
             const isLast = index === pathnames.length - 1;
             const product = getProduct(name);
 
-            if (name === "product") {
-              return (
-                <div key={name} className="breadcrumbs__item-wrapper">
-                  <img src={ArrowIcon} alt="separator" className="breadcrumbs__arrow" />
-                  <NavLink to="/shop" className="breadcrumbs__item">Shop</NavLink>
-                </div>
-              );
+            let displayName = formatName(name);
+            if (isLast && product) {
+              displayName = product.title || product.name;
+            } else if (name === "product") {
+              displayName = "Shop";
             }
 
-            if (product && isLast) {
-              return (
-                <React.Fragment key={name}>
-                  <div className="breadcrumbs__item-wrapper">
-                    <img src={ArrowIcon} alt="separator" className="breadcrumbs__arrow" />
-                    <NavLink to={`/shop?category=${product.category}`} className="breadcrumbs__item">
-                      {formatName(product.category)}
-                    </NavLink>
-                  </div>
-                  
-                  <div className="breadcrumbs__item-wrapper">
-                    <img src={ArrowIcon} alt="separator" className="breadcrumbs__arrow" />
-                    <span className="breadcrumbs__item breadcrumbs__item--active">
-                      {product.title || product.name} 
-                    </span>
-                  </div>
-                </React.Fragment>
-              );
+            let routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
+            if (name !== "shop" && name !== "product" && !product) {
+              routeTo = `/shop?category=${name}`;
+            } else if (name === "product") {
+              routeTo = "/shop";
             }
-
-            const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
 
             return (
-              <div key={name} className="breadcrumbs__item-wrapper">
-                <img src={ArrowIcon} alt="separator" className="breadcrumbs__arrow" />
+              <div
+                key={`${name}-${index}`}
+                className="breadcrumbs__item-wrapper"
+              >
+                <img
+                  src={ArrowIcon}
+                  alt="separator"
+                  className="breadcrumbs__arrow"
+                />
+
                 {isLast ? (
                   <span className="breadcrumbs__item breadcrumbs__item--active">
-                    {formatName(name)}
+                    {displayName}
                   </span>
                 ) : (
                   <NavLink to={routeTo} className="breadcrumbs__item">
-                    {formatName(name)}
+                    {displayName}
                   </NavLink>
                 )}
               </div>
