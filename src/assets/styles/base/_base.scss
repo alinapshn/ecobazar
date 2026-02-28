@@ -95,7 +95,8 @@ a {
   &--disabled {
     background: $gray-0-5;
     color: $gray-3;
-
+    cursor: not-allowed;
+    
     img {
       filter: invert(1);
     }
@@ -154,12 +155,12 @@ a {
     }
   }
 
-  &--green-border{
+  &--green-border {
     background: $white;
     color: $primary;
     outline: 2px solid $primary;
 
-    &:hover{
+    &:hover {
       background: $white;
     }
   }
