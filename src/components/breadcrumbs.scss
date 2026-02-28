@@ -1,0 +1,27 @@
+.breadcrumbs {
+  background: url("../assets/img/breadcrumbs/breadcrumbs.png");
+
+  &__wrapper {
+    padding: 48px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: $body-m;
+    line-height: 150%;
+    color: $gray-4;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &--active{
+      color: $primary;
+    }
+  }
+}

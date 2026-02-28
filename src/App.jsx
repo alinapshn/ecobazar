@@ -19,6 +19,7 @@ import { SignUp } from "./pages/sign-up/SignUp";
 import { NotFoundPage } from "./pages/not-found/NotFoundPage";
 import { Subscribe } from "./components/Subscribe";
 import { Footer } from "./components/Footer";
+import { Breadcrumbs } from "./components/Breadcrumbs";
 import "./App.scss";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <WishlistProvider>
         <ModalProvider>
           <Header />
+          <Breadcrumbs />
           <main>
             <Routes>
               <Route index element={<HomePage />} />
