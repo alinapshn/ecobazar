@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { products } from "../../../data/products";
 import { FiltersHeader } from "../../components/FiltersHeader";
 import { Filters } from "./Filters";
@@ -7,51 +8,77 @@ import { Pagination } from "../../components/Pagination";
 import "./shopPage.scss";
 
 export function ShopPage() {
-  const allPrices = products.map((product) => product.priceCents);
-  const minPrice = Math.min(...allPrices);
-  const maxPrice = Math.max(...allPrices);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get("category");
 
-  const categoryCounts = products.reduce((accumulator, product) => {
-    const categoryName = product.category;
-    accumulator[categoryName] = (accumulator[categoryName] || 0) + 1;
-    return accumulator;
-  }, {});
+  const normalize = (str) =>
+    str?.toLowerCase().trim().replace(/-/g, " ");
 
-  const categoriesList = [
-    {
-      name: "All categories",
-      count: products.length,
-    },
-    ...Object.keys(categoryCounts).map((name) => ({
-      name: name,
-      count: categoryCounts[name],
-    })),
-  ];
+  const formatForDisplay = (cat) => {
+    if (!cat || cat === "all") return "All categories";
+    return cat
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (l) => l.toUpperCase());
+  };
+
+  const { minPrice, maxPrice, categoriesList } = useMemo(() => {
+    const prices = products.map((p) => p.priceCents);
+
+    const counts = products.reduce((acc, p) => {
+      acc[p.category] = (acc[p.category] || 0) + 1;
+      return acc;
+    }, {});
+
+    const list = [
+      { name: "All categories", count: products.length },
+      ...Object.keys(counts).map((name) => ({
+        name,
+        count: counts[name],
+      })),
+    ];
+
+    return {
+      minPrice: Math.min(...prices),
+      maxPrice: Math.max(...prices),
+      categoriesList: list,
+    };
+  }, []);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 15;
 
-  const [tempFilters, setTempFilters] = useState({
-    category: "All categories",
+  const [tempFilters, setTempFilters] = useState(() => ({
+    category: formatForDisplay(categoryFromUrl),
     priceRange: [minPrice, maxPrice],
-  });
+  }));
 
-  const [appliedFilters, setAppliedFilters] = useState({ ...tempFilters });
+  const [appliedFilters, setAppliedFilters] = useState(() => ({
+    category: formatForDisplay(categoryFromUrl),
+    priceRange: [minPrice, maxPrice],
+  }));
+  
+  useEffect(() => {
+    const newCategory = formatForDisplay(categoryFromUrl);
 
-  const isDirty =
-    JSON.stringify(tempFilters) !== JSON.stringify(appliedFilters);
+    setTempFilters((prev) => ({
+      ...prev,
+      category: newCategory,
+    }));
 
-  const isFiltered =
-    appliedFilters.category !== "All categories" ||
-    appliedFilters.priceRange[0] !== minPrice ||
-    appliedFilters.priceRange[1] !== maxPrice;
+    setAppliedFilters((prev) => ({
+      ...prev,
+      category: newCategory,
+    }));
+
+    setCurrentPage(1);
+  }, [categoryFromUrl]);
 
   const filteredProducts = useMemo(() => {
     return products
       .filter((product) => {
         const categoryMatch =
           appliedFilters.category === "All categories" ||
-          product.category === appliedFilters.category;
+          normalize(product.category) ===
+            normalize(appliedFilters.category);
 
         const priceMatch =
           product.priceCents >= appliedFilters.priceRange[0] &&
@@ -59,34 +86,53 @@ export function ShopPage() {
 
         return categoryMatch && priceMatch;
       })
-      .sort((productA, productB) => {
-        if (productA.inStock !== productB.inStock) {
-          return productA.inStock ? -1 : 1;
-        }
-        return 0;
-      });
+      .sort((a, b) =>
+        a.inStock === b.inStock ? 0 : a.inStock ? -1 : 1
+      );
   }, [appliedFilters]);
 
-  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const itemsPerPage = 15;
+  const totalPages = Math.ceil(
+    filteredProducts.length / itemsPerPage
+  );
+
   const currentItems = filteredProducts.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage,
+    currentPage * itemsPerPage
   );
 
   const handleApply = () => {
     setAppliedFilters(tempFilters);
+
+    if (tempFilters.category === "All categories") {
+      setSearchParams({});
+    } else {
+      setSearchParams({
+        category: tempFilters.category
+          .toLowerCase()
+          .replace(/\s+/g, "-"),
+      });
+    }
+
     setCurrentPage(1);
   };
 
   const handleReset = () => {
-    const base = {
+    const baseFilters = {
       category: "All categories",
       priceRange: [minPrice, maxPrice],
     };
-    setTempFilters(base);
-    setAppliedFilters(base);
+
+    setTempFilters(baseFilters);
+    setAppliedFilters(baseFilters);
+    setSearchParams({});
     setCurrentPage(1);
   };
+
+  const isFiltered =
+    appliedFilters.category !== "All categories" ||
+    appliedFilters.priceRange[0] !== minPrice ||
+    appliedFilters.priceRange[1] !== maxPrice;
 
   return (
     <section className="shop-page">
@@ -94,19 +140,27 @@ export function ShopPage() {
         <div className="shop-page__wrapper">
           <FiltersHeader
             count={filteredProducts.length}
-            isDirty={isDirty}
             onApply={handleApply}
             onReset={handleReset}
+            isDirty={
+              JSON.stringify(tempFilters) !==
+              JSON.stringify(appliedFilters)
+            }
             isFiltered={isFiltered}
           />
+
           <div className="shop-page__content">
             <Filters
               categories={categoriesList}
               tempFilters={tempFilters}
               setTempFilters={setTempFilters}
+              minPrice={minPrice}
+              maxPrice={maxPrice}
             />
+
             <div className="shop-page__content-grid">
               <ProductsGrid products={currentItems} />
+
               <Pagination
                 totalPages={totalPages}
                 currentPage={currentPage}
